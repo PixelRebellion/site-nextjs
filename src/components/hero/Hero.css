@@ -3,7 +3,7 @@
 @import "../../app/globals.css";
 
 .hero {
-  @apply relative text-[var(--heading-color)] w-full h-screen flex justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/background-image.svg)];
+  @apply relative text-[var(--heading-color)] w-full h-screen flex justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/hero-background.svg)];
 }
 .hero-inner {
   @apply max-w-[120rem];
