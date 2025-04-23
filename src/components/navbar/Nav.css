@@ -29,7 +29,7 @@ nav .nav-links a:not(.contact-cta):hover {
 
 /* Navigation link underline effect */
 nav .nav-links a:not(.contact-cta)::before {
-  @apply content-[''] absolute top-15 left-1/2 w-0 h-[4px] bg-[var(--primary-color)] transition-all duration-300;
+  @apply content-[''] absolute bottom-[-20] left-1/2 w-0 h-[4px] bg-[var(--primary-color)] transition-all duration-300;
 }
 
 nav .nav-links a:not(.contact-cta):hover::before {
