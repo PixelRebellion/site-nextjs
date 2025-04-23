@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.about-section {
+  @apply relative bg-[var(--background-color)] text-[var(--body-color)] py-40 px-8 text-center overflow-hidden flex justify-center items-center h-[90dvh];
+}
+
+.about-inner {
+  @apply max-w-[120rem] text-center z-2 relative;
+}
+
+.about-heading {
+  @apply text-[5rem] font-bold uppercase tracking-[0.2rem] opacity-100 mb-8 text-[var(--heading-color)];
+}
+
+.about-heading.animate-heading {
+  @apply opacity-100 translate-y-0;
+}
+
+.about-text {
+  @apply text-[2rem] font-[Roboto] mb-16 max-w-[65ch] mx-auto opacity-100 text-[var(--body-color)];
+}
+
+.about-text.animate-text {
+  @apply md:opacity-100 md:translate-y-0;
+}
+
+.about-cta {
+  @apply font-[Roboto] text-[2rem] py-[1.6rem] px-[3.2rem] bg-[var(--primary-color)] text-black rounded-lg font-semibold transition-all duration-300 ease-in-out inline-block;
+}
+
+.about-cta:hover {
+  @apply bg-[var(--primary-hover-color)] text-white scale-105 shadow-lg transition-all duration-300 ease-in-out;
+}

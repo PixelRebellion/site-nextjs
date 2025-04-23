@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* Navigation */
+
+/* Base navbar styles */
+nav {
+  @apply fixed inset-0 w-full h-[10vh] flex justify-between items-center px-16 z-50;
+}
+
+/* Logo styles */
+nav .logo a {
+  @apply text-[2.5rem] text-[var(--primary-color)] transition-colors tracking-[0.2rem] font-bold uppercase;
+}
+
+/* Navigation links container */
+nav .nav-links {
+  @apply flex gap-[2rem] text-[var(--body-color)];
+}
+
+/* Navigation links */
+nav .nav-links a {
+  @apply text-[1rem] md:text-[1.8rem] transition-colors tracking-[0.1rem] font-medium relative overflow-hidden;
+}
+
+/* Navigation link hover */
+nav .nav-links a:not(.contact-cta):hover {
+  @apply text-[var(--primary-color)];
+}
+
+/* Navigation link underline effect */
+nav .nav-links a:not(.contact-cta)::before {
+  @apply content-[''] absolute top-15 left-1/2 w-0 h-[4px] bg-[var(--primary-color)] transition-all duration-300;
+}
+
+nav .nav-links a:not(.contact-cta):hover::before {
+  @apply left-0 w-full;
+}
+
+
+/* Hamburger menu */
+nav .hamburger {
+  @apply hidden flex-col justify-center items-center cursor-pointer;
+}
+
+nav .hamburger .bar {
+  @apply w-[4rem] h-[0.3rem] bg-[var(--heading-color)] my-[0.1rem] mx-auto;
+}
+
+/* Scrolled navbar style */
+.navbar-scroll {
+  @apply bg-[rgba(45,45,45,0.8)] backdrop-blur-[20px] transition-all duration-300 ease-in-out;
+}
+
+/* Contact CTA button */
+.contact-cta {
+  @apply text-[1.8rem] text-[var(--primary-color)] px-6 py-3 border-2 border-[var(--primary-color)] rounded-lg hover:bg-[var(--primary-color)] hover:text-[var(--heading-color)];
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav .nav-links {
+    @apply absolute top-0 -right-full bg-[var(--background-color)] h-screen w-[70%] flex flex-col gap-[1rem] justify-center items-center transition-[right] duration-500 ease-in;
+  }
+
+  nav .nav-links.open {
+    @apply right-0 ;
+  }
+
+  nav .hamburger {
+    @apply flex text-white;
+  }
+
+  nav .nav-links a {
+    @apply text-[4rem] my-[2-rem];
+  }
+
+  .navbar-scroll {
+    @apply bg-[rgba(45,45,45,0.8)] backdrop-blur-[20px] transition-all duration-300 ease-in-out;
+  }
+
+  .mobile-navbar-scroll {
+    @apply bg-[rgba(45,45,45,0.2)] backdrop-blur-[20px];
+  }
+}

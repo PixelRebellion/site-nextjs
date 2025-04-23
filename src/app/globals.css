@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+  :root {
+    --heading-font: "Orbitron", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --background-color: #0a0a0a;
+    --heading-color: #fafafa;
+    --body-color: #b3b3b3;
+    --primary-color: #00c2ff;
+    --primary-hover-color: #0085ad;
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+
+  p, a {
+    font-family: var(--body-font);
+    color: var(--body-color);
+  }

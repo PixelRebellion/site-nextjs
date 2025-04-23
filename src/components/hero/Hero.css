@@ -1,0 +1,44 @@
+/* HERO SECTION */
+@import "tailwindcss";
+@import "../../app/globals.css";
+
+.hero {
+  @apply relative text-[var(--heading-color)] w-full h-screen flex justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/background-image.svg)];
+}
+.hero-inner {
+  @apply max-w-[120rem];
+}
+
+.hero-heading {
+  @apply font-[Orbitron] text-[4.5rem] md:text-[15rem] text-[var(--heading-color)] uppercase tracking-[0.2rem] font-bold mb-12 relative leading-[1.1];
+}
+
+.hero-subheading {
+  @apply font-[Roboto] text-[2.4rem] text-[var(--body-color)] mb-[4.8rem] max-w-[70rem] mx-auto leading-[150%];
+}
+
+.hero-cta {
+  @apply text-[2rem] py-[1.6rem] px-[3.2rem] bg-[var(--primary-color)] text-[var(--background-color)] rounded-lg font-semibold transition-all duration-300 ease-in-out inline-block;
+}
+
+.hero-cta:hover {
+  @apply bg-[var(--primary-hover-color)] text-white scale-105 shadow-lg transition-all duration-300 ease-in-out;
+}
+
+/* HERO RESPONSIVE */
+
+.hero-heading {
+  @apply text-[4.5rem] lg:text-[15rem] md:text-[9rem] sm:text-[7rem];
+}
+
+.hero-subheading {
+  @apply text-[2.4rem] md:text-[2rem] sm:text-[1.8rem]
+}
+
+.hero-cta {
+  @apply font-[Roboto] text-[2rem] py-[1.6rem] px-[3.2rem] md:text-[1.8rem] md:py-[1.4rem] md:px-[2.8rem] sm:text-[1.6rem] sm:py-[1.2rem] sm:px-[2.4rem];
+}
+
+.hero {
+  @apply px-16 sm:px-8;
+}
