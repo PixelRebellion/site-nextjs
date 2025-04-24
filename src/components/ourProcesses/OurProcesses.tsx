@@ -1,14 +1,16 @@
-import React from 'react'
-import OurProcessesIntro from './OurProcessesIntro'
-import OurProcessesCard from './OurProcessesCard'
-import OurProcessesButton from './OurProcessesButton'
+import HeroButton from '../common/HeroButton'
+import HeroIntroText from '../common/HeroIntroText'
+import OurProcessesList from './OurProcessesList'
 
 const OurProcesses = () => {
   return (
-    <section className='flex flex-col mx-auto w-full items-center justify-start h-full bg-[url(/assets/our-processes.svg)]'>
-        <OurProcessesIntro />
-        <OurProcessesCard />
-        <OurProcessesButton />
+    <section className='flex flex-col mx-auto w-full items-center justify-start h-full bg-cover bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/our-processes.svg)]'>
+        <HeroIntroText
+          title="Our Processes"
+          description="We follow a clear and efficient process to bring your ideas to life. Here's how we work, from start to finish:"
+        />
+        <OurProcessesList />
+        <HeroButton text='Get Started With Us'/>
 
     </section>
   )

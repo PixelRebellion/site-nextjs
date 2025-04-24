@@ -1,13 +1,16 @@
-import WhatWeDoIntro from '@/components/whatWeDo/WhatWeDoIntro'
+import HeroButton from '../common/HeroButton'
+import HeroIntroText from '../common/HeroIntroText'
 import WhatWeDoList from './WhatWeDoList'
-import WhatWeDoButton from './WhatWeDoButton'
 
 const WhatWeDo = () => {
   return (
-    <section className='flex flex-col mx-auto w-full items-center justify-start h-full bg-black bg-[url(/assets/what-we-do-background.svg)]'>
-      <WhatWeDoIntro />
+    <section className='flex flex-col mx-auto w-full items-center justify-start h-full bg-cover bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/what-we-do-background.svg)]'>
+      <HeroIntroText
+        title="What We Do"
+        description="At Pixel Rebellion, we merge design, development, and strategy to craft bold digital experiences. Whether you're launching a new brand or scaling your digital presence — we've got you covered."
+      />
       <WhatWeDoList />
-      <WhatWeDoButton />
+      <HeroButton text='Lets Talk'/>
     </section>
 )}
 

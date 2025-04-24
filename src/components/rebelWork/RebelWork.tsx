@@ -1,0 +1,23 @@
+import React from 'react'
+import RebelWorkIntro from './RebelWorkIntro'
+import Hero from '../hero/Hero'
+import HeroIntroText from '../common/HeroIntroText'
+import RebelWorkList from './RebelWorkList'
+import HeroButton from '../common/HeroButton'
+
+const RebelWork = () => {
+  return (
+    <section className='flex flex-col mx-auto w-full items-center justify-start h-full bg-cover bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/rebel-work.svg)]'>
+        <HeroIntroText
+            title="Rebel Work"
+            description="A glimpse into the kind of digital experiences we craft — bold, modern, and made to stand out."
+        />
+        <RebelWorkList />
+        <div className='mt-36'>
+          <HeroButton text='See more...'/>
+        </div>
+    </section>
+  )
+}
+
+export default RebelWork

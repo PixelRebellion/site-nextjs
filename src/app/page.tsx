@@ -1,6 +1,9 @@
 import About from "@/components/about/About";
+import CallToAction from "@/components/callToAction/CallToAction";
+import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import OurProcesses from "@/components/ourProcesses/OurProcesses";
+import RebelWork from "@/components/rebelWork/RebelWork";
 import WhatWeDo from "@/components/whatWeDo/WhatWeDo";
 
 export default function Home() {
@@ -9,6 +12,8 @@ export default function Home() {
         <Hero />
         <WhatWeDo />
         <OurProcesses />
-        <About />
+        <RebelWork />
+        <CallToAction />
+        <Footer />
       </main>  );
 }
