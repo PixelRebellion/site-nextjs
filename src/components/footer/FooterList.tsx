@@ -4,7 +4,7 @@ import Link from 'next/link'
 const FooterList = () => {
   return (
     <>
-        <div className='my-24 flex flex-col md:flex-row items-center justify-between'>
+        <div className='my-0 md:my-24 flex flex-col md:flex-row items-center justify-between'>
             {footerList.map((item) => (
                 <div key={item.id} className='flex flex-col items-center justify-between'>
                     <div className='flex items-center justify-center'>
