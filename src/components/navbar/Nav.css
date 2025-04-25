@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../../app/globals.css";
 
 /* Navigation */
 
@@ -9,7 +10,7 @@ nav {
 
 /* Logo styles */
 nav .logo a {
-  @apply text-[2.5rem] text-[var(--primary-color)] transition-colors tracking-[0.2rem] font-bold uppercase;
+  @apply text-[2.5rem] w-8 leading-8 xs:leading-12 text-[var(--primary-color)] transition-colors tracking-[0.2rem] font-bold uppercase;
 }
 
 /* Navigation links container */
