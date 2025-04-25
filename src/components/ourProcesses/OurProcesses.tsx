@@ -12,7 +12,6 @@ const OurProcesses = () => {
         <OurProcessesList />
         <HeroButton
           text='Get Started With Us'
-          link='/contact'
         />
 
     </section>

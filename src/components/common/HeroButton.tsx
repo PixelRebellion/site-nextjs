@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 interface HeroButtonProps {
   text: string;
-  link: string;
+  link?: string;
 }
 
 const HeroButton = ({text, link}: HeroButtonProps) => {
   return (
       <div className='my-36'>
-        <Link href={link} >
+        <Link href={link || ''} >
             <button
               type='button'
               aria-label='hero button'
