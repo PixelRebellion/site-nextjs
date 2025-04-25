@@ -13,7 +13,7 @@ const RebelWork = () => {
             description="A glimpse into the kind of digital experiences we craft — bold, modern, and made to stand out."
         />
         <RebelWorkList />
-        <div className='mt-36'>
+        <div className='mt-8 md:mt-36'>
           <HeroButton text='See more...'/>
         </div>
     </section>

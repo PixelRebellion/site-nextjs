@@ -1,9 +1,5 @@
-import Design from "../../../public/assets/icons/Design";
-import Development from "../../../public/assets/icons/Development";
-import Discover from "../../../public/assets/icons/Discover";
-import Launch from "../../../public/assets/icons/Launch";
-import OurProcessesCard from "./OurProcessesCard";
 import { processes } from "@/data/dataLists";
+import OurProcessesCard from "./OurProcessesCard";
 
 const OurProcessesList = () => {
     return (
