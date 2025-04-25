@@ -14,7 +14,7 @@
 }
 
 .hero-subheading {
-  @apply font-[Roboto] text-[2.4rem] text-[var(--body-color)] mb-[4.8rem] max-w-[70rem] mx-auto leading-[150%];
+  @apply font-[Roboto] text-[2.4rem] text-[var(--body-color)] mb-[4.8rem] w-11/12 md:max-w-[70rem] mx-auto leading-[150%];
 }
 
 .hero-cta {
