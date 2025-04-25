@@ -25,7 +25,7 @@ interface PageParams {
 
 const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> }) => {
   const resolvedParams = await params;
-  const { works } = resolvedParams; // Extract the specific work slug
+  const { works } = resolvedParams;
 
   return (
     <div className='flex flex-col items-center justify-center w-full h-screen bg-[var(--background-color)]'>
