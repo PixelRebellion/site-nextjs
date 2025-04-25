@@ -1,4 +1,4 @@
-import { processes } from "@/data/dataLists";
+import { processes } from "@/utils/dataLists";
 import OurProcessesCard from "./OurProcessesCard";
 
 const OurProcessesList = () => {

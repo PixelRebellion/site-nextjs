@@ -10,7 +10,7 @@ nav {
 
 /* Logo styles */
 nav .logo a {
-  @apply text-[2.5rem] w-8 leading-8 xs:leading-12 text-[var(--primary-color)] transition-colors tracking-[0.2rem] font-bold uppercase;
+  @apply text-[2.5rem] leading-8 xs:leading-12 text-[var(--primary-color)] transition-colors tracking-[0.2rem] font-bold uppercase;
 }
 
 /* Navigation links container */
@@ -30,11 +30,11 @@ nav .nav-links a:not(.contact-cta):hover {
 
 /* Navigation link underline effect */
 nav .nav-links a:not(.contact-cta)::before {
-  @apply content-[''] absolute bottom-[-20] left-1/2 w-0 h-[4px] bg-[var(--primary-color)] transition-all duration-300;
+  @apply invisible md:visible md:content-[''] md:absolute md:bottom-[-20] md:left-1/2 md:w-0 md:h-[4px] md:bg-[var(--primary-color)] md:transition-all md:duration-300;
 }
 
 nav .nav-links a:not(.contact-cta):hover::before {
-  @apply left-0 w-full;
+  @apply invisible md:visible md:left-0 md:w-full;
 }
 
 

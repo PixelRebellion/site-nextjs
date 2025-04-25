@@ -28,19 +28,18 @@ const works = [
     {id: 4, title: "Work 4", description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.", icon: 'work4'},
 ]
 
-const footerList = [
+const linksList = [
     {id: 1, title: "Home", link: "/"},
     {id: 2, title: "About", link: "/about"},
-    {id: 3, title: "Services", link: "/swervices"},
-    {id: 4, title: "Our Work", link: "/work"},
+    {id: 3, title: "Services", link: "/services"},
+    {id: 4, title: "Our Work", link: "/rebel-work"},
     {id: 5, title: "Contact", link: "/contact"},
 
 ]
-
 
 export {
     services,
     processes,
     works,
-    footerList
+    linksList
 }

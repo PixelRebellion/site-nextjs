@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import "../navbar/Nav.css"; // Import your CSS file here
+import { linksList } from "@/utils/dataLists";
 
 
 const Navbar = () => {
@@ -55,27 +56,19 @@ const Navbar = () => {
     setMenuOpen((prevState) => !prevState);
   };
 
-  const menuItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Our Work", href: "/work" },
-    { name: "Contact", href: "/contact" },
-  ];
-
   return (
     <nav className={`${scrolling ? "navbar-scroll" : "mobile-navbar-scroll"}`}>
-      <div className="logo w-8 md:w-full">
+      <div className="logo w-8 md:w-96">
         <Link href="/">Pixel Rebellion</Link>
       </div>
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-        {menuItems.map((item, index) => (
+        {linksList.map((item, index) => (
           <li key={index}>
             <Link
-              href={item.href}
+              href={item.link}
               onClick={() => setMenuOpen(false)}
-              className={item.name === 'Contact' ? "contact-cta" : ""}>
-              {item.name}
+              className={item.title === 'Contact' ? "contact-cta" : ""}>
+              {item.title}
             </Link>
           </li>
         ))}

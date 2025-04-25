@@ -1,4 +1,4 @@
-import { services } from '../../data/dataLists'
+import { services } from '../../utils/dataLists'
 import WhatWeDoCard from './WhatWeDoCard'
 
 const WhatWeDoList = () => {
