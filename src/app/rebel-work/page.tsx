@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ReberlWorkPage = () => {
+const RebelWorkPage = () => {
   return (
-    <div>ReberlWorkPage</div>
+    <div>RebelWorkPage</div>
   )
 }
 
-export default ReberlWorkPage
+export default RebelWorkPage

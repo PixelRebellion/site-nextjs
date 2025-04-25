@@ -10,7 +10,10 @@ const OurProcesses = () => {
           description="We follow a clear and efficient process to bring your ideas to life. Here's how we work, from start to finish:"
         />
         <OurProcessesList />
-        <HeroButton text='Get Started With Us'/>
+        <HeroButton
+          text='Get Started With Us'
+          link='/contact'
+        />
 
     </section>
   )

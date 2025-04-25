@@ -10,7 +10,10 @@ const WhatWeDo = () => {
         description="At Pixel Rebellion, we merge design, development, and strategy to craft bold digital experiences. Whether you're launching a new brand or scaling your digital presence — we've got you covered."
       />
       <WhatWeDoList />
-      <HeroButton text='Lets Talk'/>
+      <HeroButton
+        text='Lets Talk'
+        link='/contact'
+      />
     </section>
 )}
 
