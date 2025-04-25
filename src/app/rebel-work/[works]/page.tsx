@@ -28,7 +28,10 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
   const { works } = resolvedParams; // Extract the specific work slug
 
   return (
-    <div className='mt-20'>Showcasing work: {works}</div>
+    <div className='flex flex-col items-center justify-center w-full h-screen bg-[var(--background-color)]'>
+      <h1 className='text-[8rem] text-[var(--heading-color)]'>{works}</h1>
+
+    </div>
   );
 };
 
