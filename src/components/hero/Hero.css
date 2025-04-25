@@ -3,18 +3,18 @@
 @import "../../app/globals.css";
 
 .hero {
-  @apply relative text-[var(--heading-color)] w-full h-screen flex justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/backgrounds/hero-background.svg)];
+  @apply relative text-[var(--heading-color)] w-full h-screen flex flex-col justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/backgrounds/hero-background.svg)];
 }
 .hero-inner {
-  @apply max-w-[120rem];
+  @apply w-screen md:max-w-[120rem];
 }
 
 .hero-heading {
-  @apply font-[Orbitron] text-[4.5rem] md:text-[15rem] text-[var(--heading-color)] uppercase tracking-[0.2rem] font-bold mb-12 relative leading-[1.1];
+  @apply mx-auto w-11/12 md:w-full text-[3.8rem] md:text-[15rem] text-[var(--heading-color)] uppercase tracking-[0.2rem] font-bold mb-12 relative leading-[1.1];
 }
 
 .hero-subheading {
-  @apply font-[Roboto] text-[2.4rem] text-[var(--body-color)] mb-[4.8rem] w-11/12 md:max-w-[70rem] mx-auto leading-[150%];
+  @apply text-[2.4rem] text-[var(--body-color)] mb-[4.8rem] w-11/12 md:max-w-[780rem] mx-auto leading-[150%];
 }
 
 .hero-cta {
@@ -28,7 +28,7 @@
 /* HERO RESPONSIVE */
 
 .hero-heading {
-  @apply text-[4.5rem] lg:text-[15rem] md:text-[9rem] sm:text-[7rem];
+  @apply text-[3.8rem] xs:text-[5.8rem] sm:text-[7rem] md:text-[9rem] lg:text-[15rem];
 }
 
 .hero-subheading {

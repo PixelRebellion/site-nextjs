@@ -24,3 +24,7 @@
   p, a {
     font-family: var(--body-font);
   }
+
+  @theme {
+    --breakpoint-xs: 350px;
+  }
