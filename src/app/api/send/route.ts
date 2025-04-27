@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
-      to: ['danmalmx@gmail.com', 'Adam-hamwandi@hotmail.com '],
+      to: ['danmalmx@gmail.com', 'Adam-hamwandi@hotmail.com'],
       subject: 'Hello world',
       react: await EmailTemplate({ firstName: firstName || 'You!' }),
     });
