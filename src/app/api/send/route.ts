@@ -5,11 +5,9 @@ import { Resend } from 'resend';
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
-    // Parse the request body
     const body = await request.json();
     const { firstName } = body;
 
-    // Check if API key exists
     if (!process.env.RESEND_API_KEY) {
       console.error("Missing RESEND_API_KEY environment variable");
       return Response.json(
