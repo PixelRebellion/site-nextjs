@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
       to: ['danmalmx@gmail.com'],
       subject: 'Hello world',
-      react: EmailTemplate({ firstName: firstName || 'You!' }),
+      react: EmailTemplate({ firstName: firstName }),
     });
 
     if (error) {
