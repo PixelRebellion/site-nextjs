@@ -7,12 +7,12 @@ import WhatWeDo from "@/components/whatWeDo/WhatWeDo";
 
 export default function Home() {
   return (
-      <main>
+      <section>
         <Hero />
         <WhatWeDo />
         <OurProcesses />
         <RebelWork />
         <CallToAction />
         <Footer />
-      </main>  );
+      </section>  );
 }
