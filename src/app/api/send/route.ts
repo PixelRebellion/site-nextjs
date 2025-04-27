@@ -1,4 +1,4 @@
-import { EmailTemplate } from '../../../components/email-template';
+import EmailTemplate from '../../../components/email-template';
 import { Resend } from 'resend';
 
 export async function POST(request: Request) {
@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
       to: ['danmalmx@gmail.com'],
       subject: 'Hello world',
-      react: await EmailTemplate({ firstName: firstName || 'You!' }),
+      react: EmailTemplate({ firstName: firstName || 'You!' }),
     });
 
     if (error) {
