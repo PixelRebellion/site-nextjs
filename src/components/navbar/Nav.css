@@ -67,7 +67,7 @@ nav .hamburger .bar {
     @apply right-0 ;
   }
 
-  nav .nav-links.open li {
+  nav .nav-links li {
     @apply my-4 ;
   }
 
