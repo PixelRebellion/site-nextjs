@@ -16,11 +16,11 @@ export async function POST(request: Request) {
       );
     }
 
-    const emailHtml = await EmailTemplate({ firstName: firstName || 'John' });
+    const emailHtml = await EmailTemplate({ firstName: firstName || 'You!' });
 
     const { data, error } = await resend.emails.send({
       from: 'hello <hello@pixelrebellion.dev>',
-      to: ['danmalmx@gmail.com'],
+      to: ['danmalmx@gmail.com', 'Adam-hamwandi@hotmail.com '],
       subject: 'Hello world',
       react: emailHtml,
     });

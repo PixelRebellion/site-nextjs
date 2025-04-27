@@ -44,7 +44,6 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 125) {
-      console.log('scrolling', window.scrollY);
       setScrolling(true);
     } else {
       setScrolling(false);

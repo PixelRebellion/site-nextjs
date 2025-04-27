@@ -29,7 +29,7 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
 
   return (
     <div className='flex flex-col items-center justify-center w-full h-screen bg-[var(--background-color)]'>
-      <h1 className='text-[8rem] text-[var(--heading-color)]'>{works}</h1>
+      <h3 className='text-[8rem] text-[var(--heading-color)]'>{works}</h3>
 
     </div>
   );

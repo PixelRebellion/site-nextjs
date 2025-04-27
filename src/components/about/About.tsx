@@ -11,12 +11,9 @@ const About = () => {
     // Lägg till scroll-event
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
-      // console.log("Scroll Position: ", scrollPosition);
-      // console.log("About Section OffsetTop: ", aboutSection.offsetTop);
 
       // Kolla om sektionen är synlig
       // if (scrollPosition > aboutSection.offsetTop + 100) {
-      //   // console.log("Animation triggered");
       //   heading.classList.add("animate-heading");
       //   text.classList.add("animate-text");
       // }

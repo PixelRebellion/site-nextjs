@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <h1 className="hero-heading">
+        <h3 className="hero-heading">
           <span>
             PIXEL
           </span>{" "}
           <span>
             REBELLION
           </span>
-        </h1>
+        </h3>
         <p className="hero-subheading">
           Freelance agency for the digital age. We help you build your digital
           empire with pixel-perfect design and development.
