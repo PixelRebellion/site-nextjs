@@ -8,7 +8,7 @@ const sendEmail = async () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        firstName: "John",
+        firstName: "You!",
       }),
     });
 
@@ -28,7 +28,7 @@ const sendEmail = async () => {
 const SendMailButton = () => {
   return (
     <button
-      onClick={sendEmail}
+      onClick={() => sendEmail()}
       className="px-6 py-2 border border-black rounded-lg cursor-pointer"
     >
       Send mail
