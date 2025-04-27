@@ -3,7 +3,7 @@
 @import "../../app/globals.css";
 
 .hero {
-  @apply relative text-[var(--heading-color)] w-full h-screen flex flex-col justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/backgrounds/hero-background.svg)];
+  @apply relative text-[var(--heading-color)] w-full h-screen flex flex-col justify-center items-center px-16 text-center overflow-hidden bg-cover bg-center bg-no-repeat brightness-80 z-[1] transition-all duration-300 ease-in-out bg-[url(/assets/backgrounds/hero-background.svg)];
 }
 .hero-inner {
   @apply w-screen md:max-w-[120rem];
@@ -28,7 +28,7 @@
 /* HERO RESPONSIVE */
 
 .hero-heading {
-  @apply text-[3.8rem] xs:text-[5.8rem] sm:text-[7rem] md:text-[9rem] lg:text-[15rem];
+  @apply text-[3.8rem] xs:text-[4.8rem] sm:text-[7rem] md:text-[9rem] lg:text-[15rem];
 }
 
 .hero-subheading {

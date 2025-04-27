@@ -15,7 +15,7 @@ nav .logo a {
 
 /* Navigation links container */
 nav .nav-links {
-  @apply flex gap-[2rem] text-[var(--body-color)];
+  @apply flex gap-[2.5rem] text-[var(--body-color)];
 }
 
 /* Navigation links */
@@ -54,7 +54,7 @@ nav .hamburger .bar {
 
 /* Contact CTA button */
 .contact-cta {
-  @apply text-[1.8rem] text-[var(--primary-color)] px-6 py-3 border-2 border-[var(--primary-color)] rounded-lg hover:bg-[var(--primary-color)] hover:text-[var(--heading-color)];
+  @apply text-[1.8rem] my-10 text-[var(--primary-color)] px-6 py-3 border-2 border-[var(--primary-color)] rounded-lg hover:bg-[var(--primary-color)] hover:text-[var(--heading-color)];
 }
 
 /* Mobile styles */
@@ -67,12 +67,16 @@ nav .hamburger .bar {
     @apply right-0 ;
   }
 
+  nav .nav-links.open li {
+    @apply my-4 ;
+  }
+
   nav .hamburger {
     @apply flex text-white;
   }
 
   nav .nav-links a {
-    @apply text-[4rem] my-[2-rem];
+    @apply text-[2rem] md:text-[4rem] my-[2rem];
   }
 
   .navbar-scroll {
