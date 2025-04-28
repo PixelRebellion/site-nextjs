@@ -1,4 +1,4 @@
-import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
+import type { Handler, HandlerEvent } from "@netlify/functions";
 
 // netlify/functions/send.js
 interface RequestBody {
@@ -14,7 +14,7 @@ interface ErrorResponseBody {
     error: string;
 }
 
-export const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
+export const handler: Handler = async (event: HandlerEvent) => {
     // Check if it's a POST request
     if (event.httpMethod !== "POST") {
         const errorBody: ErrorResponseBody = { error: "Method not allowed" };
