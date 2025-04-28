@@ -3,7 +3,7 @@
 
 const sendEmail = async () => {
  try {
-   const response = await fetch("/netlify/functions", {
+   const response = await fetch("/netlify/functions/send.ts", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
