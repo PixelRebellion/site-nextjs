@@ -3,7 +3,7 @@
 
 const sendEmail = async () => {
  try {
-   const response = await fetch("/api/send", {
+   const response = await fetch("/api/send/route.js", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
