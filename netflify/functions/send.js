@@ -1,4 +1,4 @@
-const { Resend } = require('resend');
+import { Resend } from 'resend';
 
 exports.handler = async (event, context) => {
   // Check if it's a POST request
