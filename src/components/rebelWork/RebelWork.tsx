@@ -1,9 +1,6 @@
-import React from 'react'
-import RebelWorkIntro from './RebelWorkIntro'
-import Hero from '../hero/Hero'
-import HeroIntroText from '../common/HeroIntroText'
+import HeroButton from '../common/hero/HeroButton'
+import HeroIntroText from '../common/hero/HeroIntroText'
 import RebelWorkList from './RebelWorkList'
-import HeroButton from '../common/HeroButton'
 
 const RebelWork = () => {
   return (

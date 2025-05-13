@@ -1,4 +1,4 @@
-import CallToAction from "@/components/callToAction/CallToAction";
+import CallToAction from "@/components/common/cta/CallToAction";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import OurProcesses from "@/components/ourProcesses/OurProcesses";
@@ -12,7 +12,11 @@ export default function Home() {
         <WhatWeDo />
         <OurProcesses />
         <RebelWork />
-        <CallToAction />
-        <Footer />
+        <CallToAction
+          title="Let’s Build Something Bold Together"
+          description="Whether you have a big idea or need help shaping one — we’re ready to turn your vision into reality. Let’s talk."
+          buttonText="Let's Talk"
+          buttonLink="/contact"
+        />
       </section>  );
 }

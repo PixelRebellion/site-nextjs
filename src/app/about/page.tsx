@@ -1,3 +1,4 @@
+import CallToAction from '@/components/common/cta/CallToAction'
 import AboutCard from './AboutCard'
 
 const AboutPage = () => {
@@ -32,6 +33,13 @@ const AboutPage = () => {
       <AboutCard />
 
     </div>
+    <CallToAction
+      title="Got a project in mind?"
+      description="Let’s bring it to life — with strategy, design, and code that rebels against the ordinary."
+      buttonText="Get Started"
+      buttonLink="/contact"
+    />
+
   </section>
   )
 }

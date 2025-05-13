@@ -35,7 +35,7 @@ const AboutCard = () => {
   return (
     <>
       {profileInfo.map((profile: ProfileType) => (
-        <div key={profile.id} className="mx-24 md:mt-36">
+        <div key={profile.id} className="mx-18 md:mt-36">
             <div className="flex flex-col items-center mb-8 shrink-0">
                 <Image
                     src={profile.image}

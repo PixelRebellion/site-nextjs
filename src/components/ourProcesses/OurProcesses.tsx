@@ -1,5 +1,5 @@
-import HeroButton from '../common/HeroButton'
-import HeroIntroText from '../common/HeroIntroText'
+import HeroButton from '../common/hero/HeroButton'
+import HeroIntroText from '../common/hero/HeroIntroText'
 import OurProcessesList from './OurProcessesList'
 
 const OurProcesses = () => {
