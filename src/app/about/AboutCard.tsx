@@ -42,11 +42,11 @@ const AboutCard = () => {
                     alt={profile.name}
                     height={200}
                     width={200}
-                    className='size-[20rem] object-cover p-2 bg-gradient-to-b from-blue-600 to-purple-700 rounded-full'
+                    className='size-[20rem] object-cover p-3 bg-gradient-to-b from-blue-600 to-purple-700 rounded-full'
                 />
                 <h4 className="mt-4 text-[1.8rem] font-semibold text-[var(--heading-color)]">{profile.name}</h4>
                 <p className="text-[1.4rem] text-[var(--heading-color)]">{profile.role}</p>
-                <div className='flex gap-12 items-center my-12'>
+                <div className='flex md:gap-20 gap-8 items-center my-12'>
                     <Link href={profile.linkedIn} target="_blank" rel="noopener noreferrer" className='blank'><LinkedIn /></Link>
                     <Link href={`mailto:${profile.email}`} className='blank'><Email /></Link>
                 </div>

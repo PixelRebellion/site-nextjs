@@ -1,5 +1,4 @@
 import CallToAction from "@/components/common/cta/CallToAction";
-import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import OurProcesses from "@/components/ourProcesses/OurProcesses";
 import RebelWork from "@/components/rebelWork/RebelWork";
