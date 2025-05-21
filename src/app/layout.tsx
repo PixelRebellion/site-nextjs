@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Orbitron, Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -29,6 +30,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${orbitron.variable} ${roboto.variable} font-sans`}>
       <Navbar />
+      <Toaster
+        toastOptions={{
+          position: "top-center",
+          className: 'text-xl',
+          duration: 5000,
+        }}
+      />
       <main>
         {children}
       </main>

@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
   interface FormData {
     fullName: string;
@@ -9,8 +11,6 @@ import React, { useState } from 'react';
     budget: string;
     message: string;
   }
-
-
 
   const SendEmail = () => {
     const [formData, setFormData] = useState<FormData>({
@@ -31,8 +31,22 @@ import React, { useState } from 'react';
 
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
       e.preventDefault();
-      console.log("Form submitted:", formData);
-      // Add your form submission logic here
+      console.log("Form submitted");
+      try {
+        const post = fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+        toast.success(`Email sent successfully.`);
+        return post
+
+      } catch (error) {
+        toast.error(`Error sending email. Try again later.`);
+        console.log("Email sent successfully");
+      };
     };
 
   return (

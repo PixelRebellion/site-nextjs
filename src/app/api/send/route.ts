@@ -5,7 +5,12 @@ export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
-    const { firstName } = body;
+    const {
+      fullName,
+      email,
+      company,
+      budget,
+      message, } = body;
 
     if (!process.env.RESEND_API_KEY) {
       console.error("Missing RESEND_API_KEY environment variable");
@@ -17,9 +22,9 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
-      to: ['danmalmx@gmail.com'],
+      to: email,
       subject: 'Howdy!',
-      react: EmailTemplate({ firstName: firstName }),
+      react: EmailTemplate({ fullName, company, email }),
     });
 
     if (error) {
@@ -36,33 +41,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
-// import EmailTemplate from "@/components/email-template";
-// import { NextResponse } from "next/server";
-// import { Resend } from "resend";
-
-// const resend = new Resend(process.env.RESEND_API_KEY);
-
-// export async function POST(request: Request) {
-//   try {
-//     const body = await request.json();
-//     const { name, email, message } = body;
-//     const data = await resend.emails.send({
-//       from: "Mise en Digital <hello@miseendigital.com>",
-//       to: "hello@miseendigital.com",
-//       subject: "Message from " + name + " via miseendigital.com",
-//       replyTo: email,
-//       html: message,
-//     });
-//     const dataResponse = await resend.emails.send({
-//       from: "Mise en Digital <hello@miseendigital.com>",
-//       to: email,
-//       subject: "Your message to Mise en Digital",
-//       react: EmailTemplate({ message }),
-//     });
-
-//     return NextResponse.json({ data, dataResponse });
-//   } catch (error) {
-//     return NextResponse.json({ error });
-//   }
-// }
