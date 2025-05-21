@@ -29,23 +29,39 @@ import toast from 'react-hot-toast';
       }));
     };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
       e.preventDefault();
       console.log("Form submitted");
       try {
-        const post = fetch('/api/send', {
+        const response = await fetch('/api/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData),
         });
-        toast.success(`Email sent successfully.`);
-        return post
+
+        if (!response.ok) {
+          toast.error(`Failed to send email. ${response.status}. Please try again later.`);
+          throw new Error(`Failed to send email: ${response.status}`);
+        }
+
+        const result = await response.json();
+        toast.success('Email sent successfully.');
+
+        setFormData({
+          fullName: "",
+          email: "",
+          company: "",
+          budget: "",
+          message: ""
+        });
+
+        return result;
 
       } catch (error) {
         toast.error(`Error sending email. Try again later.`);
-        console.log("Email sent successfully");
+        throw new Error(`Failed to send email: ${error}`);
       };
     };
 
