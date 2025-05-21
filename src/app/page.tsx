@@ -15,7 +15,7 @@ export default function Home() {
           title="Let’s Build Something Bold Together"
           description="Whether you have a big idea or need help shaping one — we’re ready to turn your vision into reality. Let’s talk."
           buttonText="Let's Talk"
-          buttonLink="/contact"
+          buttonLink="contact"
         />
       </section>  );
 }

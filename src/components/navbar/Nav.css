@@ -84,6 +84,6 @@ nav .hamburger .bar {
   }
 
   .mobile-navbar-scroll {
-    @apply bg-[rgba(45,45,45,0.2)] backdrop-blur-[20px];
+    @apply bg-[rgba(45,45,45,0.2)] backdrop-blur-[20px] fixed;
   }
 }
