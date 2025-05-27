@@ -41,24 +41,20 @@ import toast from 'react-hot-toast';
           body: JSON.stringify(formData),
         });
 
-        if (!response.ok) {
-          toast.error(`Failed to send email. ${response.status}. Please try again later.`);
-          throw new Error(`Failed to send email: ${response.status}`);
+        if (response.ok) {
+          const result = await response.json();
+          toast.success('Email sent successfully.');
+
+          setFormData({
+            fullName: "",
+            email: "",
+            company: "",
+            budget: "",
+            message: ""
+          });
+
+          return result;
         }
-
-        const result = await response.json();
-        toast.success('Email sent successfully.');
-
-        setFormData({
-          fullName: "",
-          email: "",
-          company: "",
-          budget: "",
-          message: ""
-        });
-
-        return result;
-
       } catch (error) {
         toast.error(`Error sending email. Try again later.`);
         throw new Error(`Failed to send email: ${error}`);
@@ -75,7 +71,7 @@ import toast from 'react-hot-toast';
         <h3 className='mt-48 text-[2.4rem] text-[var(--heading-color)]'>Start a Project</h3>
         <p className='text-[1.8rem] text-[var(--heading-color)] '>Got a project or just a wild idea? Drop us a line — we’ll respond within 24h.</p>
       </div>
-      <div className="my-24 w-11/12 md:max-w-5xl space-y-10">
+      <div className="my-24 w-10/12 md:max-w-5xl space-y-10">
         <div className="space-y-2">
           <label htmlFor="fullName" className="text-lg block text-cyan-400">
             Full Name

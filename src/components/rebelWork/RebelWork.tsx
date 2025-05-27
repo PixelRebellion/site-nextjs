@@ -13,7 +13,7 @@ const RebelWork = () => {
         <div className='mt-8 md:mt-36'>
           <HeroButton
             text='See more...'
-            link=''
+            link='/rebel-work'
 
             />
         </div>

@@ -5,4 +5,4 @@ export const createSlug = (title: string) => {
       .replace(/[^\w-]+/g, '')
       .replace(/--+/g, '-')
       .replace(/^-+|-+$/g, '');
-  }
+}
