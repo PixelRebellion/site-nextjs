@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
 
@@ -17,7 +16,6 @@ import toast from 'react-hot-toast';
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
     const handleFormSubmit = async (formData: FormData) => {
-      console.log('form submitted', formData);
       try {
         const response = await fetch('/api/send', {
           method: 'POST',
@@ -28,6 +26,7 @@ import toast from 'react-hot-toast';
         });
 
         if (response.ok) {
+          console.log('form submitted', formData);
           const result = await response.json();
           toast.success('Email sent successfully.');
 
