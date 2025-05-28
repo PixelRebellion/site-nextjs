@@ -1,7 +1,9 @@
 'use client'
 
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast';
+
 
   interface FormData {
     fullName: string;
@@ -12,6 +14,8 @@ import toast from 'react-hot-toast';
   }
 
   const SendEmail = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+    console.log({errors});
     const [formData, setFormData] = useState<FormData>({
       fullName: "",
       email: "",
@@ -28,36 +32,36 @@ import toast from 'react-hot-toast';
       }));
     };
 
-    const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault();
-      try {
-        const response = await fetch('/api/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
+    const handleFormSubmit = async (formData: FormData) => {
+      console.log('form submitted', formData);
+      // try {
+      //   const response = await fetch('/api/send', {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify(formData),
+      //   });
 
-        if (response.ok) {
-          console.log("Form submitted");
-          const result = await response.json();
-          toast.success('Email sent successfully.');
+      //   if (response.ok) {
+      //     console.log("Form submitted");
+      //     const result = await response.json();
+      //     toast.success('Email sent successfully.');
 
-          setFormData({
-            fullName: "",
-            email: "",
-            company: "",
-            budget: "",
-            message: ""
-          });
+      //     setFormData({
+      //       fullName: "",
+      //       email: "",
+      //       company: "",
+      //       budget: "",
+      //       message: ""
+      //     });
 
-          return result;
-        }
-      } catch (error) {
-        toast.error(`Error sending email. Try again later.`);
-        throw new Error(`Failed to send email: ${error}`);
-      };
+      //     return result;
+      //   }
+      // } catch (error) {
+      //   toast.error(`Error sending email. Try again later.`);
+      //   throw new Error(`Failed to send email: ${error}`);
+      // };
     };
 
   return (
@@ -70,22 +74,19 @@ import toast from 'react-hot-toast';
         <h3 className='mt-48 text-[2.4rem] text-[var(--heading-color)]'>Start a Project</h3>
         <p className='text-[1.8rem] text-[var(--heading-color)] '>Got a project or just a wild idea? Drop us a line — we’ll respond within 24h.</p>
       </div>
-      <div className="my-24 w-10/12 md:max-w-5xl space-y-10">
+      <form onSubmit={handleSubmit((data) => {handleFormSubmit(data)})} className="my-24 w-10/12 md:max-w-5xl space-y-10">
         <div className="space-y-2">
           <label htmlFor="fullName" className="text-lg block text-cyan-400">
             Full Name
           </label>
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleChange}
+              {...register("fullName", { required: "Full name is required", minLength: {value: 8, message: "Minimum length of fullname is 8 characters"} })}
               placeholder="Full Name"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
+          <p className='text-white ml-2'>{errors.fullName?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -94,15 +95,16 @@ import toast from 'react-hot-toast';
           </label>
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              {...register("email", {
+                required: "Email is required",
+                pattern: /^\S+@\S+\.\S+$/,
+
+            })}
               placeholder="your@email.com"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
+          <p className='text-white ml-2'>{errors.email?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -111,32 +113,26 @@ import toast from 'react-hot-toast';
           </label>
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              type="text"
-              id="company"
-              name="company"
-              value={formData.company}
-              onChange={handleChange}
+              {...register("company", { required: "Company or brand is required", minLength: {value: 5, message: "Minimum length of company or brand name is 5 characters"} })}
               placeholder="Your company name"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
+          <p className='text-white ml-2'>{errors.company?.message}</p>
         </div>
 
         <div className="space-y-2">
           <label htmlFor="budget" className="text-lg block text-cyan-400">
             Your Budget
-          </label>
+          </label>''
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              type="text"
-              id="budget"
-              name="budget"
-              value={formData.budget}
-              onChange={handleChange}
+              {...register("budget", { required: "Budget is required", pattern: /^\d+(\.\d{1,2})?$/, minLength: {value: 500, message: "The minimum valuen is s00"}, } )}
               placeholder="Write your budget here"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
+          <p className='text-white ml-2'>{errors.budget?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -145,25 +141,20 @@ import toast from 'react-hot-toast';
           </label>
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
+              {...register("message", { required: "Message is required", minLength: {value: 20, message: "Minimum length of message is 20 characters"} })}
               placeholder="Your message"
-              rows={6}
               className="w-full h-72 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
+          <p className='text-white ml-2'>{errors.message?.message}</p>
         </div>
 
-        <button
-          type="button"
-          onClick={handleSubmit}
+        <input
+          type="submit"
           className="w-full z-10 h-16 cursor-pointer py-3 px-4 bg-cyan-500 hover:cursor-pointer hover:bg-cyan-600 text-black text-lg font-medium rounded-lg transition duration-300 ease-in-out"
-        >
+        />
           Send Message
-        </button>
-      </div>
+      </form>
   </section>
   )
 }
