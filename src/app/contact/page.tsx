@@ -31,7 +31,6 @@ import toast from 'react-hot-toast';
 
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
       e.preventDefault();
-      console.log("Form submitted");
       try {
         const response = await fetch('/api/send', {
           method: 'POST',
@@ -42,6 +41,7 @@ import toast from 'react-hot-toast';
         });
 
         if (response.ok) {
+          console.log("Form submitted");
           const result = await response.json();
           toast.success('Email sent successfully.');
 
