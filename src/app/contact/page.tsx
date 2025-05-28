@@ -158,8 +158,9 @@ import toast from 'react-hot-toast';
         </div>
 
         <button
+          type="button"
           onClick={handleSubmit}
-          className="w-full h-16 cursor-pointer py-3 px-4 bg-cyan-500 hover:bg-cyan-600 text-black text-lg font-medium rounded-lg transition duration-300 ease-in-out"
+          className="w-full z-10 h-16 cursor-pointer py-3 px-4 bg-cyan-500 hover:cursor-pointer hover:bg-cyan-600 text-black text-lg font-medium rounded-lg transition duration-300 ease-in-out"
         >
           Send Message
         </button>
