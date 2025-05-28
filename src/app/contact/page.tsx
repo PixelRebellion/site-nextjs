@@ -14,54 +14,30 @@ import toast from 'react-hot-toast';
   }
 
   const SendEmail = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
-    console.log({errors});
-    const [formData, setFormData] = useState<FormData>({
-      fullName: "",
-      email: "",
-      company: "",
-      budget: "",
-      message: ""
-    });
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = e.target;
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: value
-      }));
-    };
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
     const handleFormSubmit = async (formData: FormData) => {
       console.log('form submitted', formData);
-      // try {
-      //   const response = await fetch('/api/send', {
-      //     method: 'POST',
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //     },
-      //     body: JSON.stringify(formData),
-      //   });
+      try {
+        const response = await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
 
-      //   if (response.ok) {
-      //     console.log("Form submitted");
-      //     const result = await response.json();
-      //     toast.success('Email sent successfully.');
+        if (response.ok) {
+          const result = await response.json();
+          toast.success('Email sent successfully.');
 
-      //     setFormData({
-      //       fullName: "",
-      //       email: "",
-      //       company: "",
-      //       budget: "",
-      //       message: ""
-      //     });
-
-      //     return result;
-      //   }
-      // } catch (error) {
-      //   toast.error(`Error sending email. Try again later.`);
-      //   throw new Error(`Failed to send email: ${error}`);
-      // };
+          reset();
+          return result;
+        }
+      } catch (error) {
+        toast.error(`Error sending email. Try again later.`);
+        throw new Error(`Failed to send email: ${error}`);
+      };
     };
 
   return (
@@ -81,7 +57,7 @@ import toast from 'react-hot-toast';
           </label>
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              {...register("fullName", { required: "Full name is required", minLength: {value: 8, message: "Minimum length of fullname is 8 characters"} })}
+              {...register("fullName", { required: "Full name is required", minLength: {value: 8, message: "Minimum length of full name is 8 characters"} })}
               placeholder="Full Name"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
@@ -97,8 +73,10 @@ import toast from 'react-hot-toast';
             <input
               {...register("email", {
                 required: "Email is required",
-                pattern: /^\S+@\S+\.\S+$/,
-
+                pattern: {
+                  value: /^\S+@\S+\.\S+$/,
+                  message: "Please enter a valid email address (with @ and .xx)"
+                },
             })}
               placeholder="your@email.com"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
@@ -127,7 +105,7 @@ import toast from 'react-hot-toast';
           </label>''
           <div className="p-[1px] rounded-xl bg-gradient-to-r from-cyan-400 to-purple-500">
             <input
-              {...register("budget", { required: "Budget is required", pattern: /^\d+(\.\d{1,2})?$/, minLength: {value: 500, message: "The minimum valuen is s00"}, } )}
+              {...register("budget", { required: "Budget is required", pattern: /^\d+(\.\d{1,2})?$/, minLength: {value: 3, message: "The minimum valuen is s00"}, } )}
               placeholder="Write your budget here"
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
@@ -149,11 +127,13 @@ import toast from 'react-hot-toast';
           <p className='text-white ml-2'>{errors.message?.message}</p>
         </div>
 
-        <input
+        <button
           type="submit"
+
           className="w-full z-10 h-16 cursor-pointer py-3 px-4 bg-cyan-500 hover:cursor-pointer hover:bg-cyan-600 text-black text-lg font-medium rounded-lg transition duration-300 ease-in-out"
-        />
+        >
           Send Message
+        </button>
       </form>
   </section>
   )
