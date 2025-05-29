@@ -1,4 +1,4 @@
-import EmailTemplate from '../../../components/email-template';
+import EmailTemplate from '../../components/email-template';
 import { Resend } from 'resend';
 
 export async function POST(request: Request) {
