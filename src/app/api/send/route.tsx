@@ -12,18 +12,11 @@ export async function POST(request: Request) {
       budget,
       message, } = body;
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error("Missing RESEND_API_KEY environment variable");
-      return Response.json(
-        { error: "Missing API key configuration" },
-        { status: 500 }
-      );
-    }
-
     const { data, error } = await resend.emails.send({
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
       to: email,
       subject: 'Howdy!',
+      replyTo: email,
       react: EmailTemplate({ fullName, company, email }),
     });
 
