@@ -15,10 +15,12 @@ export async function POST(request: NextRequest) {
       message, } = body;
     console.log('Received data:', { fullName, email, company, budget, message });
 
+    const firstName = fullName.split(' ')[0];
+
     const { data, error } = await resend.emails.send({
       from: 'Pixel Rebellion <hello@pixelrebellion.dev>',
       to: email,
-      subject: `We received your message, ${fullName}!`,
+      subject: `We received your message, ${firstName}!`,
       replyTo: email,
       react: EmailTemplate({ fullName, company, email }),
     });
