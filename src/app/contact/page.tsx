@@ -31,11 +31,6 @@ const SendEmail = () => {
         toast.success('Email sent successfully.');
         reset();
         return result;
-      } else {
-
-        const errorData = await response.json().catch(() => ({}));
-        toast.error(errorData.error || 'Error sending email. Try again later.');
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
     } catch (error) {
       console.error('Form submission error:', error);
