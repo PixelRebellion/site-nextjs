@@ -12,32 +12,37 @@ import toast from 'react-hot-toast';
     message: string;
   }
 
-  const SendEmail = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+const SendEmail = () => {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
-    const handleFormSubmit = async (formData: FormData) => {
-      try {
-        const response = await fetch('/app/api/send/', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
+  const handleFormSubmit = async (formData: FormData) => {
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-        if (response.ok) {
-          console.log('form submitted', formData);
-          const result = await response.json();
-          toast.success('Email sent successfully.');
+      if (response.ok) {
+        console.log('form submitted', formData);
+        const result = await response.json();
+        toast.success('Email sent successfully.');
+        reset();
+        return result;
+      } else {
 
-          reset();
-          return result;
-        }
-      } catch (error) {
-        toast.error(`Error sending email. Try again later.`);
-        throw new Error(`Failed to send email: ${error}`);
-      };
-    };
+        const errorData = await response.json().catch(() => ({}));
+        toast.error(errorData.error || 'Error sending email. Try again later.');
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Error sending email. Try again later.');
+      throw new Error(`Failed to send email: ${error}`);
+    }
+  };
 
   return (
     <section className='flex flex-col items-center justify-start w-full h-full bg-[var(--background-color)]'>
