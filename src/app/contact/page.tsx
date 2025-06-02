@@ -17,7 +17,7 @@ import toast from 'react-hot-toast';
 
     const handleFormSubmit = async (formData: FormData) => {
       try {
-        const response = await fetch('/api/send/', {
+        const response = await fetch('/app/api/send/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
