@@ -33,7 +33,7 @@ export default function RootLayout({
       <Toaster
         toastOptions={{
           position: "top-center",
-          className: 'text-xl',
+          className: 'text-2xl',
           duration: 5000,
         }}
       />
