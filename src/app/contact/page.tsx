@@ -17,7 +17,7 @@ const SendEmail = () => {
 
   const handleFormSubmit = async (formData: FormData) => {
     try {
-      const response = await fetch('/api/sendmail/', {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
