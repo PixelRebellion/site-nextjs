@@ -19,6 +19,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Pixel Rebellion",
   description: "Freelance agency for the digital age",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
