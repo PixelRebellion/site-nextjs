@@ -47,8 +47,8 @@ const AboutCard = () => {
                 <h4 className="mt-4 text-[1.8rem] font-semibold text-[var(--heading-color)]">{profile.name}</h4>
                 <p className="text-[1.4rem] text-[var(--heading-color)]">{profile.role}</p>
                 <div className='flex md:gap-20 gap-8 items-center my-12'>
-                    <Link href={profile.linkedIn} target="_blank" rel="noopener noreferrer" className='blank'><LinkedIn /></Link>
-                    <Link href={`mailto:${profile.email}`} className='blank'><Email /></Link>
+                    <Link href={profile.linkedIn} target="_blank" rel="noopener noreferrer" className='blank'><span className='hidden'>LinkedIn</span><LinkedIn /></Link>
+                    <Link href={`mailto:${profile.email}`} className='blank'><span className='hidden'>Email</span><Email /></Link>
                 </div>
             </div>
         </div>
