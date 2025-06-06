@@ -29,7 +29,7 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
   return (
     <div className='flex flex-col items-center justify-center space-y-12 w-full h-full bg-[var(--background-color)]'>
       <Image src={`/assets/images/${workItem!.icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0'/>
-      <h3 className='w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)]'>{workItem!.title}</h3>
+      <h1 className='w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)]'>{workItem!.title}</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12 w-10/12 mx-auto'>
         <div className='w-full md:w-10/12'>
           <p className='text-[2rem] text-[var(--body-color)] font-bold'>Description</p>
