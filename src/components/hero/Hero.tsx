@@ -13,7 +13,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="hero-subheading">
-          Freelance agency for the digital age. We help you build your digital
+          We're freelance agency for the digital age. We help you build your digital
           empire with pixel-perfect design and development.
         </p>
         <a href="#work" className="hero-cta">
