@@ -1,0 +1,25 @@
+# Allow all search engines to crawl everything important
+User-agent: *
+Disallow:
+
+# Disallow common sensitive or non-SEO pages
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /dashboard/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /privacy-policy/
+Disallow: /terms-and-conditions/
+Disallow: /search/
+
+# Allow crawling of assets (CSS, JS, images) — important for rendering your site properly
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.svg
+
+# Sitemap location for better indexing
+Sitemap: https://pixelrebellion.dev/sitemap.xml
