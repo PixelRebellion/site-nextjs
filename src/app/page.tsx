@@ -1,8 +1,27 @@
-import CallToAction from "@/components/common/cta/CallToAction";
-import Hero from "@/components/hero/Hero";
-import OurProcesses from "@/components/ourProcesses/OurProcesses";
-import RebelWork from "@/components/rebelWork/RebelWork";
-import WhatWeDo from "@/components/whatWeDo/WhatWeDo";
+// import Hero from "@/components/hero/Hero";
+// import WhatWeDo from "@/components/whatWeDo/WhatWeDo";
+// import OurProcesses from "@/components/ourProcesses/OurProcesses";
+// import RebelWork from "@/components/rebelWork/RebelWork";
+// import CallToAction from "@/components/common/cta/CallToAction";
+
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/hero/Hero"), {
+
+});
+
+const WhatWeDo = dynamic(() => import("@/components/whatWeDo/WhatWeDo"), {
+});
+
+const OurProcesses = dynamic(() => import("@/components/ourProcesses/OurProcesses"), {
+});
+
+const RebelWork = dynamic(() => import("@/components/rebelWork/RebelWork"), {
+});
+
+const CallToAction = dynamic(() => import("@/components/common/cta/CallToAction"), {
+
+});
 
 export default function Home() {
   return (
