@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <section className='flex flex-col items-center justify-start w-full h-full bg-[var(--background-color)]'>
       <div className='mx-2 md:mx-0 text-center mf:text-left'>
-        <h3 className='mt-36 text-[4.8rem] text-[var(--heading-color)]'>Meet the Rebels</h3>
+        <h1 className='mt-36 text-[4.8rem] text-[var(--heading-color)]'>Meet the Rebels</h1>
         <p className='text-[2rem] text-[var(--heading-color)] '>Creative minds, strategic thinkers, bold builders.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-center md:text-left md:max-w-8/12 px-4 items-center mt-12 md:mt-36">

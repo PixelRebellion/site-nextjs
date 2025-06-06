@@ -47,7 +47,7 @@ const SendEmail = () => {
   return (
     <section className='flex flex-col items-center justify-start w-full h-full bg-[var(--background-color)]'>
       <div className='mx-2 md:mx-0 text-center mf:text-left'>
-        <h3 className='mt-36 text-[4.8rem] text-[var(--heading-color)]'>Let’s rebel against the ordinary.</h3>
+        <h1 className='mt-36 text-[4.8rem] text-[var(--heading-color)]'>Let’s rebel against the ordinary.</h1>
         <p className='text-[2rem] text-[var(--heading-color)] '>Tell us about your idea — we’ll make it unforgettable.</p>
       </div>
       <div className='mx-2 md:mx-0 text-center mf:text-left'>
