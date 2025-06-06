@@ -7,23 +7,20 @@
 import dynamic from "next/dynamic";
 
 const Hero = dynamic(() => import("@/components/hero/Hero"), {
-  ssr: false,
+
 });
 
 const WhatWeDo = dynamic(() => import("@/components/whatWeDo/WhatWeDo"), {
-  ssr: false,
 });
 
 const OurProcesses = dynamic(() => import("@/components/ourProcesses/OurProcesses"), {
-  ssr: false,
 });
 
 const RebelWork = dynamic(() => import("@/components/rebelWork/RebelWork"), {
-  ssr: false,
 });
 
 const CallToAction = dynamic(() => import("@/components/common/cta/CallToAction"), {
-  ssr: false,
+
 });
 
 export default function Home() {
