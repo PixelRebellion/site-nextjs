@@ -4,6 +4,9 @@ import { Orbitron, Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "react-hot-toast";
+import { CookieProvider } from "@/Context/CookieContext";
+import CookieConsent from "@/components/common/cookieConsent/CookieConsent";
+
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -30,21 +33,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${orbitron.variable} ${roboto.variable} font-sans`}>
-      <Navbar />
-      <Toaster
-        toastOptions={{
-          position: "top-center",
-          className: 'text-2xl',
-          duration: 5000,
-        }}
-      />
-      <main>
-        {children}
-      </main>
-      <Footer />
-      </body>
-    </html>
+    <CookieProvider>
+      <CookieConsent />
+      <html lang="en">
+        <body className={`${orbitron.variable} ${roboto.variable} font-sans`}>
+        <Navbar />
+        <Toaster
+          toastOptions={{
+            position: "top-center",
+            className: 'text-2xl',
+            duration: 5000,
+          }}
+          />
+        <main>
+          {children}
+        </main>
+        <Footer />
+        </body>
+      </html>
+    </CookieProvider>
   );
 }
