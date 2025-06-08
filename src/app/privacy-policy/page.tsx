@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-      <div className="mx-8 mb-16 mt-32 space-y-4 md:mx-48">
+      <div className="mx-8 mb-16 mt-32 space-y-8 md:mx-48">
       <h1 className="font-bold text-[3.8rem]">Privacy Policy</h1>
       <p className="italic text-[1.8rem]">
         This privacy statement was last updated on June 8th, 2025 and applies
@@ -47,14 +47,14 @@ const page = () => {
       </div>
       <div className="my-0 space-y-4 text-lg font-bold text-[2.5rem]">
         <p>1. Purpose, data and retention period</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-base font-normal text-[1.8rem]">
           We may collect or receive personal information for a number of
           purposes connected with our business operations which may include the
           following:
         </p>
         <div className="my-0 space-y-2 text-base font-bold text-[1.8rem]">
           <p>1.1 Contact - Through email or webform</p>
-          <div className="space-y-2 text-base font-normal text-[1.2rem]">
+          <div className="space-y-2 text-base font-normal text-[1.5rem]">
             <p>For this purpose we use the following data:</p>
             <ul className="ml-8 list-disc space-y-2 text-sm text-[1.2rem]">
               <li>A name (first, last or both)</li>
@@ -63,11 +63,11 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="my-0 space-y-4 text-base font-bold text-[1.8rem]">
+      <div className="my-0 space-y-4 font-bold text-[1.8rem]">
         <p>1.2 Compiling and analyzing statistics for website improvement.</p>
-        <div className="space-y-2 text-base font-normal">
+        <div className="space-y-2 text-[1.5rem] font-normal">
           <p>For this purpose we use the following data:</p>
-          <ul className="ml-8 list-disc space-y-2 text-sm">
+          <ul className="ml-8 list-disc space-y-2 text-[1.2rem]">
             <li>IP address</li>
             <li>Geolocation data</li>
             <li>An email address</li>
@@ -75,7 +75,7 @@ const page = () => {
             <li>Social media accounts</li>
           </ul>
         </div>
-        <div className="space-y-2 text-base font-normal">
+        <div className="space-y-2 text-base font-normal text-[1.2rem]">
           The basis on which we may process these data is:
           <p>
             <a
@@ -92,34 +92,34 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>2. Cookies</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-base font-normal text-[1.8rem]">
           Our website currently does not use cookies.
         </p>
         {/* <p className='text-base font-normal space-y-2'>Our website uses cookies. For more information about cookies, please refer to our <span className='font-normal underline text-slate-750'><Link href="#">Cookie Policy.</Link></span></p> */}
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>3. Disclosure practices</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           We disclose personal information if we are required by law or by a
           court order, in response to a law enforcement agency, to the extent
           permitted under other provisions of law, to provide information, or
           for an investigation on a matter related to public safety.
         </p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           If our website or organisation is taken over, sold, or involved in a
           merger or acquisition, your details may be disclosed to our advisers
           and any prospective purchasers and will be passed on to the new
           owners.
         </p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           We have concluded a data Processing Agreement with Google.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>4. Security</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           We are committed to the security of personal data. We take appropriate
           security measures to limit abuse of and unauthorized access to
           personal data. This ensures that only the necessary persons have
@@ -127,9 +127,9 @@ const page = () => {
           our security measures are regularly reviewed.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>5. Third-party websites</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           This privacy statement does not apply to third-party websites
           connected by links on our website. We cannot guarantee that these
           third parties handle your personal data in a reliable or secure
@@ -137,23 +137,23 @@ const page = () => {
           prior to making use of these websites.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>6. Amendments to this privacy statement</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           We reserve the right to make amendments to this privacy statement. It
           is recommended that you consult this privacy statement regularly in
           order to be aware of any changes. In addition, we will actively inform
           you wherever possible.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>7. Accessing and modifying your data</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.8rem] font-normal">
           If you have any questions or want to know which personal data we have
           about you, please contact us. You can contact us by using the
           information below. You have the following rights:
         </p>
-        <ul className="ml-8 list-disc space-y-2 text-sm font-normal">
+        <ul className="ml-8 list-disc space-y-2 text-[1.2rem] font-normal">
           <li>
             You have the right to know why your personal data is needed, what
             will happen to it, and how long it will be retained for.
@@ -184,24 +184,24 @@ const page = () => {
             comply with this, unless there are justified grounds for processing.
           </li>
         </ul>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           Please make sure to always clearly state who you are, so that we can
           be certain that we do not modify or delete any data of the wrong
           person.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>8. Submitting a complaint</p>
-        <p className="space-y-2 text-base font-normal">
+        <p className="space-y-2 text-[1.2rem] font-normal">
           If you are not satisfied with the way in which we handle (a complaint
           about) the processing of your personal data, you have the right to
           submit a complaint to the Data Protection Authority.
         </p>
       </div>
-      <div className="my-0 space-y-4 text-lg font-bold">
+      <div className="my-0 space-y-4 text-[2.5rem] font-bold">
         <p>9. Contact details</p>
       </div>
-      <ul className="ml-8 space-y-1 text-sm font-normal">
+      <ul className="ml-8 space-y-1 text-[1.2rem] font-normal">
         {/* <li>The Weather OÜ</li>
             <li>Lõõtsa 2A</li>
             <li>11415 Tallinn</li>
@@ -214,10 +214,10 @@ const page = () => {
         </li>
         <li>
           Email:{" "}
-          <a href="mailto:'dpo@miseendigital.com'">hello@pixelrebellion.dev</a>
+          <a href="mailto:'hello@pixelrebellion.dev'">hello@pixelrebellion.dev</a>
         </li>
       </ul>
-      <p>
+      <p className='text-[1.2rem]'>
         Right to object: you may object to the processing of your data. We
         comply with this, unless there are justified grounds for processing.
       </p>
