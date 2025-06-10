@@ -13,8 +13,8 @@ const CookieConsent = () => {
 
     return (
         <div>
-            <div className='fixed bottom-10 left-10 z-50 w-full'>
-                <div className="bg-gradient-to-b from-blue-600 to-purple-700 p-0.5 rounded-xl w-1/4 h-[18rem]">
+            <div className='fixed bottom-10 left-0 md:left-10 z-50 w-full'>
+                <div className="bg-gradient-to-b from-blue-600 to-purple-700 p-0.5 rounded-xl w-11/12 mx-auto md:mx-0 md:w-1/4 h-full">
                 <div className="bg-black p-6 rounded-xl h-full flex items-center text-center justify-center">
                     <div className='flex flex-col gap-2 items-center justify-center h-full'>
                         <h2 className="text-white text-center text-[2rem] font-bold my-2">Cookie Consent</h2>

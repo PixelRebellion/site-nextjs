@@ -33,7 +33,7 @@ const approachInfo = [
 
 const ServiceApproach = () => {
   return (
-    <div className='bg-cover bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/rebel-work.svg)]'>
+    <div className='bg-cover w-full bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/rebel-work.svg)]'>
       <h3 className='mt-36 text-[4.8rem] text-center mx-auto text-[var(--heading-color)]'>How We Work</h3>
       <p className='text-[2rem] w-11/12 md:max-w-5xl text-center mx-auto text-[var(--heading-color)]'>Every project is a journey — and we guide you through each step with clarity, collaboration, and creative precision.</p>
       <div className='mt-36 mb-72'>

@@ -2,14 +2,14 @@
 
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
-
-
+import Link from 'next/link';
   interface FormData {
     fullName: string;
     email: string;
     company: string;
     budget: string;
     message: string;
+    checkbox: boolean;
   }
 
 const SendEmail = () => {
@@ -129,6 +129,36 @@ const SendEmail = () => {
             />
           </div>
           <p className='text-white ml-2'>{errors.message?.message}</p>
+        </div>
+        <div className="form-control w-full max-w-xl">
+          <label className="flex items-center">
+          <input
+              type="checkbox"
+              id="checkbox"
+              className="checkbox h-5 w-5"
+              {...register("checkbox",
+                  {
+                      required: {
+                          value: true,
+                          message: 'You must accept the privacy policy'
+                      },
+                  }
+              )}
+          />
+          <p className="px-2">
+              I have read and accept the
+              <Link
+                  passHref
+                  href="/privacy-policy"
+                  className="text-black border-b-2 pb-1"
+              >
+                  {" "}
+                  privacy policy.
+
+              </Link>
+          </p>
+          </label>
+          <p className="error-messages px-3">{errors.checkbox?.message}</p>
         </div>
 
         <button
