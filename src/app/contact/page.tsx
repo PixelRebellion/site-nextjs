@@ -66,7 +66,7 @@ const SendEmail = () => {
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
-          <p className='text-white ml-2'>{errors.fullName?.message}</p>
+          <p className='text-white text-[1.2rem] ml-2'>{errors.fullName?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -86,7 +86,7 @@ const SendEmail = () => {
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
-          <p className='text-white ml-2'>{errors.email?.message}</p>
+          <p className='text-white text-[1.2rem]ml-2'>{errors.email?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -100,7 +100,7 @@ const SendEmail = () => {
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
-          <p className='text-white ml-2'>{errors.company?.message}</p>
+          <p className='text-white text-[1.2rem] ml-2'>{errors.company?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -114,7 +114,7 @@ const SendEmail = () => {
               className="w-full h-16 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
-          <p className='text-white ml-2'>{errors.budget?.message}</p>
+          <p className='text-white text-[1.2rem] ml-2'>{errors.budget?.message}</p>
         </div>
 
         <div className="space-y-2">
@@ -128,14 +128,14 @@ const SendEmail = () => {
               className="w-full h-72 bg-black text-gray-300 p-3 rounded-xl outline-none border border-transparent"
             />
           </div>
-          <p className='text-white ml-2'>{errors.message?.message}</p>
+          <p className='text-white text-[1.2rem] ml-2'>{errors.message?.message}</p>
         </div>
-        <div className="form-control w-full max-w-xl">
+        <div>
           <label className="flex items-center">
           <input
               type="checkbox"
               id="checkbox"
-              className="checkbox h-5 w-5"
+              className="checkbox size-8"
               {...register("checkbox",
                   {
                       required: {
@@ -145,12 +145,12 @@ const SendEmail = () => {
                   }
               )}
           />
-          <p className="px-2">
+          <p className="px-2 text-[1.2rem] text-white">
               I have read and accept the
               <Link
                   passHref
                   href="/privacy-policy"
-                  className="text-black border-b-2 pb-1"
+                  className="text-[1.2rem] text-white border-b-2 pb-1"
               >
                   {" "}
                   privacy policy.
@@ -158,7 +158,7 @@ const SendEmail = () => {
               </Link>
           </p>
           </label>
-          <p className="error-messages px-3">{errors.checkbox?.message}</p>
+          <p className="text-[1.2rem] text-white mt-4 error-messages px-3">{errors.checkbox?.message}</p>
         </div>
 
         <button
