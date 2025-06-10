@@ -4,18 +4,28 @@ import React from 'react'
 
 const Carrousel = () => {
     const logos = [
-        { src: "vuejs", alt: "vuejs" },
-        { src: "figma", alt: "figma" },
-        { src: "react", alt: "react" },
-        { src: "nextjs", alt: "nextjs" },
-        { src: "dotnetcore", alt: "dotnetcore" },
-        { src: "mongodb", alt: "mongodb" },
-        { src: "laravel", alt: "laravel" },
+        { src: "vuejs", alt: "Vue js" },
+        { src: "figma", alt: "Figma" },
+        { src: "react", alt: "React" },
+        { src: "css3", alt: "CSS" },
+        { src: "nextjs", alt: "Next js" },
+        { src: "dot-net", alt: ".NET" },
+        { src: "mongodb", alt: "Mongo DB" },
+        { src: "python", alt: "Python" },
+        { src: "html5", alt: "HTML" },
+        { src: "express", alt: "Express js" },
+        { src: "laravel", alt: "Laravel" },
         { src: "php", alt: "php" },
-        { src: "azuresqldatabase", alt: "azuresqldatabase" },
-        { src: "webflow", alt: "webflow" },
-        { src: "framermotion", alt: "framermotion" },
-        { src: "wordpress", alt: "wordpress" },
+        { src: "woocommerce", alt: "WooCommerce" },
+        { src: "azuresqldatabase", alt: "SQL" },
+        { src: "tailwindcss", alt: "Tailwind CSS" },
+        { src: "webflow", alt: "Webflow" },
+        { src: "javascript", alt: "JavaScript" },
+        { src: "canva", alt: "Canva" },
+        { src: "framermotion", alt: "Framer" },
+        { src: "wordpress", alt: "WordPress" },
+        { src: "nuxtjs", alt: "Nuxt js" },
+        { src: "typescript", alt: "TypeScript" },
     ]
 
     return (
@@ -26,6 +36,8 @@ const Carrousel = () => {
                     <div key={`first-${index}`} className="flex md:mx-20 justify-center flex-shrink-0 px-4">
                         <img
                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo.src}/${logo.src}-original.svg`}
+                            alt={logo.alt}
+                            title={logo.alt}
                             className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                         />
                     </div>
@@ -36,6 +48,8 @@ const Carrousel = () => {
                    <div key={`second-${index}`} className="flex md:mx-20 justify-center flex-shrink-0 px-4">
                         <img
                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo.src}/${logo.src}-original.svg`}
+                            alt={logo.alt}
+                            title={logo.alt}
                             className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                         />
                     </div>
