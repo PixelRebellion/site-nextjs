@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import { Toaster } from "react-hot-toast";
 import { CookieProvider } from "@/Context/CookieContext";
 import CookieConsent from "@/components/common/cookieConsent/CookieConsent";
+import Head from "next/head";
 
 
 const orbitron = Orbitron({
@@ -44,7 +45,7 @@ export default function RootLayout({
             className: 'text-2xl',
             duration: 5000,
           }}
-          />
+        />
         <main>
           {children}
         </main>
