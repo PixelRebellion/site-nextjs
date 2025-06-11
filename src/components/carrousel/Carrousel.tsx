@@ -31,7 +31,6 @@ const Carrousel = () => {
     return (
         <div className="w-full overflow-hidden bg-gray-50 py-8">
             <div className="flex animate-scroll">
-                {/* First set of logos */}
                 {logos.map((logo, index) => (
                     <div key={`first-${index}`} className="flex md:mx-20 justify-center flex-shrink-0 px-4">
                         <img
@@ -42,8 +41,6 @@ const Carrousel = () => {
                         />
                     </div>
                 ))}
-
-                {/* Second set of logos for seamless loop */}
                 {logos.map((logo, index) => (
                    <div key={`second-${index}`} className="flex md:mx-20 justify-center flex-shrink-0 px-4">
                         <img
@@ -67,7 +64,7 @@ const Carrousel = () => {
                 }
 
                 .animate-scroll {
-                    animation: scroll 20s linear infinite;
+                    animation: scroll 30s linear infinite;
                     width: max-content;
                 }
 

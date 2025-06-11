@@ -20,15 +20,16 @@ interface PageParams {
 }
 
 const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> }) => {
+
   const resolvedParams = await params;
   const { slug } = resolvedParams;
-  console.log({slug});
 
   const workItem = works.find((workItem) => createSlug(workItem.title) === slug);
+  console.log({workItem})
 
   return (
     <div className='flex flex-col items-center justify-center space-y-12 w-full h-full bg-[var(--background-color)]'>
-      <Image src={`/assets/images/${workItem!.icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0'/>
+      <Image src={`/assets/images/${workItem!.icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0' />
       <h1 className='w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)]'>{workItem!.title}</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12 w-10/12 mx-auto'>
         <div className='w-full md:w-10/12'>
@@ -47,6 +48,7 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
           <p className='text-[2rem] text-[var(--body-color)] font-bold'>Outcome</p>
           <p className='text-[1.8rem] text-[var(--body-color)]'>{workItem!.outcome}</p>
         </div>
+        <Image src={`/assets/images/${workItem!.icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0'/>
       </div>
       <CallToAction
         title="Got a project in mind?"
