@@ -30,7 +30,7 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
   return (
     <div className='w-full h-full bg-[var(--background-color)]'>
       <div className='flex flex-col items-center justify-center'>
-        <Image src={`/assets/images/${workItem!.icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0' />
+        <Image src={`/assets/images/${workItem!.icon[0]}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0' />
         <h1 className='w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)] my-12'>{workItem!.title}</h1>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto space-y-24'>
@@ -52,11 +52,9 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
         </div>
       </div>
       <div className='flex flex-wrap w-11/12 justify-center items-center mx-auto my-36 space-y-10'>
-        <Image src={`/assets/images/${workItem!.icon2}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
-        <Image src={`/assets/images/${workItem!.icon3}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
-        <Image src={`/assets/images/${workItem!.icon4}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
-        <Image src={`/assets/images/${workItem!.icon5}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
-        <Image src={`/assets/images/${workItem!.icon6}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
+      {workItem!.icon!.map((icon) => (
+        <Image src={`/assets/images/${icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl mx-auto md:mx-0'/>
+      ))}
       </div>
       <CallToAction
         title="Got a project in mind?"

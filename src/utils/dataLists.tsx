@@ -29,12 +29,7 @@ const works = [
         problem: "Most luxury real estate platforms suffer from outdated interfaces, poor mobile optimization, weak branding, and lack of personalization. Users — especially those seeking multi-million dollar properties — are left frustrated by cluttered UI, slow performance, and generic content that doesn't build trust.",
         solution: "Estate Royale was designed to be bold, elegant, and efficient. With sharp attention to detail, we built a premium interface that emphasizes clarity, visual harmony, and high-converting UX.",
         outcome: "A visually striking, emotionally engaging, and conversion-focused real estate platform that feels just as premium as the properties it showcases. 1. Listings shine with bold layout and beautiful presentation. 2. Agents now feel real and approachable, building immediate trust. 3. Improved clarity and hierarchy across the entire journey. 4. Brand identity elevated to luxury-class status. 5. Mobile experience fully optimized, no compromises. 6. Positive user feedback praising both aesthetics and ease of use.",
-        icon: 'estate-royal',
-        icon2: "estate-royal_2",
-        icon3: "estate-royal_3",
-        icon4: "estate-royal_4",
-        icon5: "estate-royal_5",
-        icon6: "estate-royal_6"
+        icon: ['estate-royal', 'estate-royal_2', 'estate-royal_3', 'estate-royal_4', 'estate-royal_5', 'estate-royal_6']
     },
     {
         id: 2,
@@ -43,7 +38,7 @@ const works = [
         problem: "The client needed a scalable e-commerce solution that could handle high traffic during seasonal campaigns while maintaining their brand's environmental values through design.",
         solution: "Built a custom headless e-commerce platform using Next.js and Shopify, featuring advanced filtering, sustainable packaging calculators, and carbon footprint tracking for each purchase.",
         outcome: "Platform handled 500% traffic increase during Earth Day campaign, achieved 4.8/5 customer satisfaction rating, and increased average order value by 85%.",
-        icon: 'work2',
+        icon: ['work2'],
     },
     {
         id: 3,
@@ -52,7 +47,7 @@ const works = [
         problem: "Existing portal had poor accessibility compliance, confusing navigation, and high abandonment rates, especially among elderly patients and non-English speakers.",
         solution: "Conducted extensive user research with diverse patient groups, implemented WCAG 2.1 AA compliance, multi-language support, and simplified appointment booking flows.",
         outcome: "Increased patient portal adoption by 180%, reduced support tickets by 45%, and achieved 100% WCAG compliance with positive feedback from accessibility audits.",
-        icon: 'work3'
+        icon: ['work3']
     },
     {
         id: 4,
@@ -61,7 +56,7 @@ const works = [
         problem: "Traditional financial tools were too complex for young investors. Client needed an intuitive app that could simplify portfolio management and investment education.",
         solution: "Designed a gamified mobile experience with micro-interactions, educational content integration, and AI-powered investment suggestions. Used React Native for cross-platform development.",
         outcome: "Reached 50,000 active users within 6 months, maintained 4.7 app store rating, and users increased their investment contributions by 60% on average.",
-        icon: 'work4'
+        icon: ['work4']
     },
     {
         id: 5,
@@ -70,7 +65,7 @@ const works = [
         problem: "Remote learning solutions lacked engagement and provided poor visibility into student progress, leading to decreased learning outcomes during virtual education periods.",
         solution: "Created an interactive learning environment with real-time collaboration tools, gamified progress tracking, and comprehensive analytics dashboards for educators and parents.",
         outcome: "Improved student engagement scores by 75%, increased course completion rates to 89%, and received adoption by over 200 schools within the first year.",
-        icon: 'work5'
+        icon: ['work5']
     },
     {
         id: 6,
@@ -79,7 +74,7 @@ const works = [
         problem: "Restaurant chains were using multiple disconnected systems for operations, leading to inefficiencies, data silos, and poor customer experience tracking.",
         solution: "Developed an integrated platform connecting POS systems, inventory management, staff scheduling, and customer analytics with real-time synchronization across all locations.",
         outcome: "Reduced operational costs by 25%, improved inventory accuracy to 98%, and increased customer retention rates by 40% through better service personalization.",
-        icon: 'work6'
+        icon: ['work6']
     }
 ];
 
