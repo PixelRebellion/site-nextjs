@@ -25,7 +25,7 @@ const works = [
     {
         id: 1,
         title: "Estate Royal",
-        description: "Estate Royale is a high-end real estate platform built to serve the premium property market in the UAE and Qatar. Designed with elegance, exclusivity, and user experience at its core, the platform helps buyers, sellers, and renters seamlessly explore prime listings, connect with top-tier agents, and manage property transactions with total confidence. Our goal was clear: create a luxurious, intuitive, and modern digital experience that mirrors the sophistication of the properties we represent.",
+        description: "In the world of digital transactions, businesses need an intuitive, fast, and secure platform to manage payments, customers, and financial insights effortlessly. That’s where PAYSYNC comes in—a powerful payment processing dashboard designed to help businesses streamline transactions while keeping everything in one place.This project is not just a dashboard; it's a seamless experience, designed with clarity, efficiency, and usability at its core. From effortless payment monitoring to advanced financial analytics, PAYSYNC is built to empower businesses with everything they need to manage their payments with ease.",
         problem: "Most luxury real estate platforms suffer from outdated interfaces, poor mobile optimization, weak branding, and lack of personalization. Users — especially those seeking multi-million dollar properties — are left frustrated by cluttered UI, slow performance, and generic content that doesn't build trust.",
         solution: "Estate Royale was designed to be bold, elegant, and efficient. With sharp attention to detail, we built a premium interface that emphasizes clarity, visual harmony, and high-converting UX.",
         outcome: "A visually striking, emotionally engaging, and conversion-focused real estate platform that feels just as premium as the properties it showcases. 1. Listings shine with bold layout and beautiful presentation. 2. Agents now feel real and approachable, building immediate trust. 3. Improved clarity and hierarchy across the entire journey. 4. Brand identity elevated to luxury-class status. 5. Mobile experience fully optimized, no compromises. 6. Positive user feedback praising both aesthetics and ease of use.",
@@ -33,12 +33,12 @@ const works = [
     },
     {
         id: 2,
-        title: "GreenLeaf Marketplace",
+        title: "PaySync",
         description: "E-commerce platform development for a sustainable products retailer targeting eco-conscious consumers.",
-        problem: "The client needed a scalable e-commerce solution that could handle high traffic during seasonal campaigns while maintaining their brand's environmental values through design.",
-        solution: "Built a custom headless e-commerce platform using Next.js and Shopify, featuring advanced filtering, sustainable packaging calculators, and carbon footprint tracking for each purchase.",
-        outcome: "Platform handled 500% traffic increase during Earth Day campaign, achieved 4.8/5 customer satisfaction rating, and increased average order value by 85%.",
-        icon: ['work2'],
+        problem: "The financial tech industry is filled with clunky, outdated interfaces that make managing payments feel like a chore. Many platforms either overcomplicate the process with unnecessary complexity or lack the essential features businesses actually need. My goal was to design a dashboard that is: 1.Simple yet powerful – No unnecessary clutter, just what users need. 2.Visually appealing – Clean, professional, and modern UI. 3.Highly functional – Streamlined workflows for payments, customers, and reports. 4.Secure & reliable – A dashboard that instills trust in users managing financial transactions.",
+        solution: "We designed PAYSYNC to offer a smooth and efficient payment management experience. The dashboard provides a clean, structured layout that makes financial data easy to access and act upon. The design incorporates strong UX principles while keeping the interface visually engaging.",
+        outcome: "The final design of PAYSYNC delivers an elegant, easy-to-use, and powerful payment management experience. The project was built with scalability in mind, allowing businesses of all sizes to effortlessly track payments, manage clients, and gain deep financial insights. The UI is sleek, the UX is frictionless, and the overall experience ensures users feel in control of their transactions at all times.",
+        icon: ['pay-sync'],
     },
     {
         id: 3,
