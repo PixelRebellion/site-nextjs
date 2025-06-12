@@ -6,7 +6,7 @@ import { createSlug } from '../../utils/helper';
 
 const RebelWorkList = () => {
   return (
-    <div className='grid grid-cols-1 mx-auto w-full md:w-auto md:grid-cols-2 gap-32 items-center justify-center my-56'>
+    <div className='grid grid-cols-1 mx-auto w-full md:w-auto md:grid-cols-2 gap-32 items-start justify-center my-56'>
         {works.map((work) => (
             <div key={work.id} className='flex flex-col items-center md:items-start justify-center space-y-12 md:space-y-16'>
                 <div>
