@@ -52,7 +52,7 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
         </div>
       </div>
       <div className='flex flex-col w-full justify-center items-center my-36 space-y-10'>
-      {workItem!.icon!.map((icon) => (
+      {workItem!.icon!.filter((title) => title.includes("_")).map((icon) => (
         <Image src={`/assets/images/${icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} image`} className='w-10/12 rounded-xl'/>
       ))}
       </div>
