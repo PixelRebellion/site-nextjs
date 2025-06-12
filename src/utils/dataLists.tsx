@@ -29,7 +29,12 @@ const works = [
         problem: "Most luxury real estate platforms suffer from outdated interfaces, poor mobile optimization, weak branding, and lack of personalization. Users — especially those seeking multi-million dollar properties — are left frustrated by cluttered UI, slow performance, and generic content that doesn't build trust.",
         solution: "Estate Royale was designed to be bold, elegant, and efficient. With sharp attention to detail, we built a premium interface that emphasizes clarity, visual harmony, and high-converting UX.",
         outcome: "A visually striking, emotionally engaging, and conversion-focused real estate platform that feels just as premium as the properties it showcases. 1. Listings shine with bold layout and beautiful presentation. 2. Agents now feel real and approachable, building immediate trust. 3. Improved clarity and hierarchy across the entire journey. 4. Brand identity elevated to luxury-class status. 5. Mobile experience fully optimized, no compromises. 6. Positive user feedback praising both aesthetics and ease of use.",
-        icon: 'estate-royal'
+        icon: 'estate-royal',
+        icon2: "estate-royal_2",
+        icon3: "estate-royal_3",
+        icon4: "estate-royal_4",
+        icon5: "estate-royal_5",
+        icon6: "estate-royal_6"
     },
     {
         id: 2,
@@ -39,7 +44,6 @@ const works = [
         solution: "Built a custom headless e-commerce platform using Next.js and Shopify, featuring advanced filtering, sustainable packaging calculators, and carbon footprint tracking for each purchase.",
         outcome: "Platform handled 500% traffic increase during Earth Day campaign, achieved 4.8/5 customer satisfaction rating, and increased average order value by 85%.",
         icon: 'work2',
-        incon2: "work1"
     },
     {
         id: 3,
