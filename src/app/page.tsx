@@ -11,13 +11,6 @@ const Carrousel = dynamic(() => import("@/components/carrousel/Carrousel"));
 export default function Home() {
   return (
     <section>
-      <Head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
-      </Head>
       <Hero />
       <Carrousel />
       <WhatWeDo />
