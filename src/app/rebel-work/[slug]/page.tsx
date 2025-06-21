@@ -25,7 +25,6 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
   const { slug } = resolvedParams;
 
   const workItem = works.find((workItem) => createSlug(workItem.title) === slug);
-  console.log({workItem})
 
   return (
     <div className='w-full h-full bg-[var(--background-color)]'>
