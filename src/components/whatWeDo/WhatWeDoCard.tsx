@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface WhatWeDoCardProps {
-    id: number;
+    id: string;
     title: string;
     description: string;
     icon: React.ReactNode;
