@@ -29,10 +29,8 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
 
   return (
     <div className='w-full h-full bg-[var(--background-color)]'>
-      <div className='flex flex-col items-center justify-center'>
-        <Image src={`/assets/images/${workItem!.icon[0]}.webp`} width={1000} height={1000} alt={`${workItem!.title} case study image`} className='mt-48 w-10/12 rounded-xl mx-auto md:mx-0' />
-        <h1 className='w-full md:w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)] my-12'>{workItem!.title}</h1>
-      </div>
+      <Image src={`/assets/images/${workItem!.icon[0]}.webp`} width={1000} height={1000} alt={`${workItem!.title} case study image`} className='pt-48 w-10/12 pb-12 rounded-xl mx-auto' key={workItem?.id}/>
+      <h1 className='w-full mx-auto md:w-10/12 text-center md:text-left text-[3.2rem] text-[var(--heading-color)] my-12'>{workItem!.title}</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto space-y-24'>
         <div className='w-full md:w-10/12'>
           <p className='text-[2rem] text-[var(--body-color)] font-bold'>Description</p>
@@ -53,7 +51,14 @@ const RebelWorksPageShowcase = async ({ params }: { params: Promise<PageParams> 
       </div>
       <div className='flex flex-col w-full justify-center items-center my-36 space-y-10'>
       {workItem!.icon!.filter((title) => title.includes("_")).map((icon) => (
-        <Image src={`/assets/images/${icon}.webp`} width={1000} height={1000} alt={`${workItem!.title} case study image`} className='w-10/12 rounded-xl'/>
+        <Image
+          key={icon}
+          src={`/assets/images/${icon}.webp`}
+          width={1000}
+          height={1000}
+          alt={`${workItem!.title} case study image`}
+          className='w-10/12 rounded-xl'
+        />
       ))}
       </div>
       <CallToAction

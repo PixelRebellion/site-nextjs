@@ -11,7 +11,7 @@ const NumberThree = () => {
         <stop offset="1" stopColor="#C56DFF"/>
         </linearGradient>
         <linearGradient id="paint1_linear_123_140" x1="81" y1="126" x2="81" y2="21" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#C56DFF"/>
+        <stop stopColor="#C56DFF"/>
         <stop offset="1" stopColor="#00C2FF"/>
         </linearGradient>
         </defs>
