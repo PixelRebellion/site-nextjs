@@ -4,7 +4,7 @@ import { works } from '../../utils/dataLists';
 import { createSlug } from '../../utils/helper';
 
 const RebelWorkList = () => {
-  const splicedWorks = [...works].splice(0, 4); // Create a shallow copy to avoid mutating the original array
+  const splicedWorks = [...works].splice(0, 4);
   return (
     <div className='grid grid-cols-1 mx-auto w-full md:w-auto md:grid-cols-2 gap-32 items-start justify-center my-8'>
       {splicedWorks.map((work) => (
