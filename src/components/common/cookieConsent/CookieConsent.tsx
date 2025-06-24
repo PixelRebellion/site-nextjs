@@ -27,13 +27,13 @@ const CookieConsent = () => {
                                     cookieOptInOption(true);
                                     setShowContent && setShowContent(true);
                                 }}
-                                className="cursor-pointer w-24 h-12 text-black rounded-xl py-2 px-4 bg-white hover:font-bold transition-all duration-300 ease-in-out">Accept</button>
+                                className="cursor-pointer w-24 h-12 text-black rounded-xl py-2 px-4 bg-white hover:bg-slate-300 transition-all duration-300 ease-in-out">Accept</button>
                             <button
                                 onClick={() => {
                                     cookieOptInOption(false);
                                     setShowContent && setShowContent(true);
                                 }}
-                                className="curson-pointer w-24 h-12 text-white hover:text-red-600 py-2 px-4 transition-all duration-300 ease-in-out">Decline</button>
+                                className="curson-pointer w-24 h-12 text-white hover:text-red-500 py-2 px-4 transition-all duration-300 ease-in-out">Decline</button>
                         </div>
                     </div>
                 </div>
