@@ -46,10 +46,12 @@ const Carrousel = () => {
                 ))}
                 {logos.map((logo, index) => (
                    <div key={`second-${index}`} className="flex md:mx-20 justify-center flex-shrink-0 px-4">
-                        <img
+                        <Image
                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${logo.src}/${logo.src}-original.svg`}
                             alt={logo.alt}
                             title={logo.alt}
+                            height={100}
+                            width={100}
                             className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                         />
                     </div>
