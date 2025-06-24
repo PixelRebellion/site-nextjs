@@ -28,5 +28,14 @@
     "dotenv": "^16.5.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11",
+    "not Chrome < 60",
+    "not Firefox < 60",
+    "not Safari < 12"
+  ]
 }
