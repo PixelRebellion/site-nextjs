@@ -10,7 +10,7 @@
 }
 
 .hero-heading {
-  @apply mx-auto w-11/12 md:w-full text-[3.8rem] md:text-[15rem] text-[var(--heading-color)] uppercase tracking-[0.2rem] font-bold mb-12 relative leading-[1.1];
+  @apply mx-auto w-11/12 md:w-full text-[3.8rem] xl:text-[15rem] text-[var(--heading-color)] uppercase tracking-[0.2rem] font-bold mb-12 relative leading-[1.1];
 }
 
 .hero-subheading {
