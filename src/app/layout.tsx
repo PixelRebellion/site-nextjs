@@ -34,9 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <CookieProvider>
-      <CookieConsent />
-      <html lang="en">
+    // <CookieProvider>
+    //   <CookieConsent />
+    <html lang="en">
+        <script data-host="https://app.analyzati.com" data-dnt="false" src="https://app.analyzati.com/js/script.js" id="ZwSg9rf6GA" async defer></script>
         <body className={`${orbitron.variable} ${roboto.variable} font-sans`}>
         <Navbar />
         <Toaster
@@ -52,6 +53,6 @@ export default function RootLayout({
         <Footer />
         </body>
       </html>
-    </CookieProvider>
+    // </CookieProvider>
   );
 }
