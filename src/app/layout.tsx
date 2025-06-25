@@ -6,8 +6,6 @@ import Footer from "@/components/footer/Footer";
 import { Toaster } from "react-hot-toast";
 import { CookieProvider } from "@/Context/CookieContext";
 import CookieConsent from "@/components/common/cookieConsent/CookieConsent";
-import Head from "next/head";
-
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -37,7 +35,7 @@ export default function RootLayout({
     // <CookieProvider>
     //   <CookieConsent />
     <html lang="en">
-        <script data-host="https://app.analyzati.com" data-dnt="false" src="https://app.analyzati.com/js/script.js" id="ZwSg9rf6GA" async defer></script>
+        <script data-host="https://app.analyzati.com" data-dnt="false" src="https://app.analyzati.com/js/script.js" id={process.env.ANALYZATI_API_KEY} async defer></script>
         <body className={`${orbitron.variable} ${roboto.variable} font-sans`}>
         <Navbar />
         <Toaster

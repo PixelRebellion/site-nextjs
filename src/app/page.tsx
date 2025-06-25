@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from "next/head";
 
 const Hero = dynamic(() => import("@/components/hero/Hero"));
 const WhatWeDo = dynamic(() => import("@/components/whatWeDo/WhatWeDo"));
