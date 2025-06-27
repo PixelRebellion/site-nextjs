@@ -70,7 +70,7 @@ const works = [
     },
     {
         id: uuidv4(),
-        title: "RestaurantPro Management",
+        title: "RestaurantPro",
         description: "All-in-one restaurant management system integrating POS, inventory, and customer relationship management.",
         problem: "Restaurant chains were using multiple disconnected systems for operations, leading to inefficiencies, data silos, and poor customer experience tracking.",
         solution: "Developed an integrated platform connecting POS systems, inventory management, staff scheduling, and customer analytics with real-time synchronization across all locations.",
