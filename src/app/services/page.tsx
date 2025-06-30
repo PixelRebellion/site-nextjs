@@ -5,7 +5,7 @@ import ServicesHeading from "./ServicesHeading";
 
 const ServicesPage = () => {
   return (
-    <section className='flex flex-col items-center justify-center w-screen h-full'>
+    <section className='flex flex-col items-center justify-center w-full h-full'>
       <ServicesHeading />
       <ServiceListing />
       <ServiceApproach />

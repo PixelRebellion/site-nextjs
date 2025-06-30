@@ -16,7 +16,7 @@ const Hero = () => {
           Freelance agency for the digital age. We help you build your digital
           empire with pixel-perfect design and development.
         </p>
-        <a href="#work" className="hero-cta">
+        <a href="/contact" className="hero-cta">
           Start the Rebellion
         </a>
       </div>

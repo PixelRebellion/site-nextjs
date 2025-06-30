@@ -79,10 +79,6 @@ nav .hamburger .bar {
     @apply text-[2rem] md:text-[4rem] my-[2rem];
   }
 
-  .navbar-scroll {
-    @apply bg-[rgba(45,45,45,0.8)] backdrop-blur-[20px] transition-all duration-300 ease-in-out;
-  }
-
   .mobile-navbar-scroll {
     @apply bg-[rgba(45,45,45,0.2)] backdrop-blur-[20px] fixed;
   }

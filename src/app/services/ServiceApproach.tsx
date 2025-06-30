@@ -1,39 +1,9 @@
 import React from 'react'
-import NumberOne from '../../../public/assets/icons/NumberOne'
-import NumberTwo from '../../../public/assets/icons/NumberTwo';
-import NumberThree from '../../../public/assets/icons/NumberThree';
-import NumberFour from '../../../public/assets/icons/NumberFour';
-
-const approachInfo = [
-  {
-    id: 1,
-    title: 'Discovery & Strategy',
-    description: 'We begin by understanding your goals, challenges, and audience. Together, we define the roadmap and set the direction with intention.',
-    icon: <NumberOne />,
-  },
-  {
-    id: 2,
-    title: 'Design & Concept',
-    description: 'We turn insights into creative concepts and intuitive interfaces — building a strong visual identity that aligns with your brand and purpose.',
-    icon: <NumberTwo />,
-  },
-  {
-    id: 3,
-    title: 'Build & Refine',
-    description: 'Our developers bring the design to life using the most suitable technologies — whether it’s custom code or no-code. We test, iterate, and optimize for performance and scalability.',
-    icon: <NumberThree />,
-  },
-  {
-    id: 4,
-    title: 'Launch & Evolve',
-    description: 'We launch your product with confidence — and support you beyond the launch with ongoing improvements, SEO, and brand growth.',
-    icon: <NumberFour />,
-  },
-];
+import { approachInfo } from '@/utils/dataLists'
 
 const ServiceApproach = () => {
   return (
-    <div className='bg-cover w-full bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/rebel-work.svg)]'>
+    <div className='bg-cover w-screen bg-center bg-no-repeat bg-fixed bg-[url(/assets/backgrounds/rebel-work.svg)]'>
       <h3 className='mt-36 text-[4.8rem] text-center mx-auto text-[var(--heading-color)]'>How We Work</h3>
       <p className='text-[2rem] w-11/12 md:max-w-5xl text-center mx-auto text-[var(--heading-color)]'>Every project is a journey — and we guide you through each step with clarity, collaboration, and creative precision.</p>
       <div className='mt-36 mb-72'>

@@ -7,6 +7,11 @@ import Launch from "../../public/assets/icons/Launch";
 import Seo from "../../public/assets/icons/Seo";
 import UxUi from "../../public/assets/icons/UxUi";
 import WebDevelopment from "../../public/assets/icons/WebDevelopment";
+import NumberOne from '../../public/assets/icons/NumberOne'
+import NumberTwo from '../../public/assets/icons/NumberTwo';
+import NumberThree from '../../public/assets/icons/NumberThree';
+import NumberFour from '../../public/assets/icons/NumberFour';
+
 
 const services = [
     {id: uuidv4(), title: "UI/UX Design", description: "Intuitive, modern, and user-first interfaces — designed to engage and convert.", icon: <UxUi />},
@@ -85,11 +90,79 @@ const linksList = [
     {id: uuidv4(), title: "Services", link: "/services"},
     {id: uuidv4(), title: "Our Work", link: "/rebel-work"},
     {id: uuidv4(), title: "Contact", link: "/contact"},
-]
+];
+
+const serviceListing = [
+    {
+      id: uuidv4(),
+      title: 'UI/UX Design',
+      description: 'We craft elegant, functional interfaces tailored to user needs and business goals. From wireframes to polished visuals — we focus on creating smooth, intuitive journeys across every screen and device.',
+      image: 'uxuidesign',
+      count: 1
+    },
+    {
+        id: uuidv4(),
+        title: 'Web Development',
+        description: 'We build fast, scalable websites using both custom code and no/low-code platforms. Whether it’s React, Next.js, WordPress, Webflow, or Framer — we pick the best tools to match your vision and build with performance, flexibility, and future-growth in mind.',
+        image: 'webdevelopment',
+        count: 2
+    },
+    {
+        id: uuidv4(),
+        title: 'Brand Identity',
+        description: 'We design bold, strategic brand systems that tell your story with clarity and impact — from logos and color systems to complete brand guidelines that bring consistency across every platform.',
+        image: 'brandidentity',
+        count: 3
+    },
+    {
+        id: uuidv4(),
+        title: 'Mobile App Design & Development',
+        description: "We design intuitive, engaging mobile app experiences that feel natural on both iOS and Android. Whether it's a standalone product or an extension of your web platform, we focus on usability, consistency, and performance — all wrapped in a beautiful interface.",
+        image: 'appdevelopment',
+        count: 4
+    },
+    {
+        id: uuidv4(),
+        title: 'SEO',
+        description: "We use AI-powered SEO strategies tailored for the new era of search. Through intelligent content creation, on-page precision, and real-time optimization — we help your brand dominate visibility, drive organic traffic, and stay ahead of trends.",
+        image: 'seo',
+        count: 5
+    },
+];
+
+const approachInfo = [
+  {
+    id: uuidv4(),
+    title: 'Discovery & Strategy',
+    description: 'We begin by understanding your goals, challenges, and audience. Together, we define the roadmap and set the direction with intention.',
+    icon: <NumberOne />,
+  },
+  {
+    id: uuidv4(),
+    title: 'Design & Concept',
+    description: 'We turn insights into creative concepts and intuitive interfaces — building a strong visual identity that aligns with your brand and purpose.',
+    icon: <NumberTwo />,
+  },
+  {
+    id: uuidv4(),
+    title: 'Build & Refine',
+    description: 'Our developers bring the design to life using the most suitable technologies — whether it’s custom code or no-code. We test, iterate, and optimize for performance and scalability.',
+    icon: <NumberThree />,
+  },
+  {
+    id: uuidv4(),
+    title: 'Launch & Evolve',
+    description: 'We launch your product with confidence — and support you beyond the launch with ongoing improvements, SEO, and brand growth.',
+    icon: <NumberFour />,
+  },
+];
+
 
 export {
     services,
     processes,
     works,
-    linksList
+    linksList,
+    serviceListing,
+    approachInfo
 }

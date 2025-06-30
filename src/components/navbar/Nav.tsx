@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <nav className={`${scrolling ? "navbar-scroll" : "mobile-navbar-scroll"}`}>
-      <div className="logo w-8 md:w-96">
+      <div className="logo w-24 md:w-96">
         <Link href="/">Pixel Rebellion</Link>
       </div>
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
