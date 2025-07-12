@@ -53,16 +53,16 @@ const works = [
         problem: "Most luxury real estate platforms suffer from outdated interfaces, poor mobile optimization, weak branding, and lack of personalization. Users — especially those seeking multi-million dollar properties — are left frustrated by cluttered UI, slow performance, and generic content that doesn't build trust.",
         solution: "Estate Royale was designed to be bold, elegant, and efficient. With sharp attention to detail, we built a premium interface that emphasizes clarity, visual harmony, and high-converting UX.",
         outcome: "A visually striking, emotionally engaging, and conversion-focused real estate platform that feels just as premium as the properties it showcases. 1. Listings shine with bold layout and beautiful presentation. 2. Agents now feel real and approachable, building immediate trust. 3. Improved clarity and hierarchy across the entire journey. 4. Brand identity elevated to luxury-class status. 5. Mobile experience fully optimized, no compromises. 6. Positive user feedback praising both aesthetics and ease of use.",
-        icon: ['estate-royal', 'estate-royal_2', 'estate-royal_3', 'estate-royal_4', 'estate-royal_5', 'estate-royal_6']
+        icon: ['estate-royal', 'estate-royal_2', 'estate-royal_3', 'estate-royal_4', /*'estate-royal_5', 'estate-royal_6'*/]
     },
     {
         id: uuidv4(),
-        title: "PaySync",
-        description: "In the world of digital transactions, businesses need an intuitive, fast, and secure platform to manage payments, customers, and financial insights effortlessly. That's where PAYSYNC comes in—a powerful payment processing dashboard designed to help businesses streamline transactions while keeping everything in one place. This project is not just a dashboard; it's a seamless experience, designed with clarity, efficiency, and usability at its core. From effortless payment monitoring to advanced financial analytics, PAYSYNC is built to empower businesses with everything they need to manage their payments with ease.",
-        problem: "The financial tech industry is filled with clunky, outdated interfaces that make managing payments feel like a chore. Many platforms either overcomplicate the process with unnecessary complexity or lack the essential features businesses actually need. My goal was to design a dashboard that is: 1.Simple yet powerful – No unnecessary clutter, just what users need. 2.Visually appealing – Clean, professional, and modern UI. 3.Highly functional – Streamlined workflows for payments, customers, and reports. 4.Secure & reliable – A dashboard that instills trust in users managing financial transactions.",
-        solution: "We designed PAYSYNC to offer a smooth and efficient payment management experience. The dashboard provides a clean, structured layout that makes financial data easy to access and act upon. The design incorporates strong UX principles while keeping the interface visually engaging.",
-        outcome: "The final design of PAYSYNC delivers an elegant, easy-to-use, and powerful payment management experience. The project was built with scalability in mind, allowing businesses of all sizes to effortlessly track payments, manage clients, and gain deep financial insights. The UI is sleek, the UX is frictionless, and the overall experience ensures users feel in control of their transactions at all times.",
-        icon: ['pay-sync'],
+        title: "Urban Edge",
+        description: "UrbanEdge is a modern real estate company with a focus on clean design and a smooth user experience. I built a sleek, conversion-focused landing page that guides users from interest to action — while reflecting the brand’s premium and professional vibe.",
+        problem: "Real estate is a crowded market, and the landing page had to stand out while staying functional. The key challenges were creating visual appeal, boosting conversions, and keeping the flow intuitive — without overwhelming users.",
+        solution: "I designed a refined, user-first layout with clear content hierarchy, strategic CTAs, and responsive visuals. Every element was crafted to support user engagement while staying true to UrbanEdge’s brand identity.",
+        outcome: "The result was a high-performing landing page that increased user interaction and reduced bounce rates. UrbanEdge saw stronger lead generation and a more polished digital presence — proving how intentional design drives real business value.",
+        icon: ['urbanedge', 'urbanedge_2', 'urbanedge_3', 'urbanedge_4'],
     },
 ];
 
