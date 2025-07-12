@@ -30,7 +30,7 @@ const processes = [
 const works = [
     {
         id: uuidv4(),
-        title: "Vårdföretagen",
+        title: "Vårdföretag",
         description: "Vårdföretaget is a mobile app that connects healthcare consultants with staffing agencies — fast, direct, and without the hassle. Users can create a profile, find assignments, and chat with agencies in real time.",
         problem: "Healthcare staffing is often slow and unclear, filled with unnecessary phone calls and paperwork. We needed a smooth, digital experience tailored for busy consultants.",
         solution: "I designed a clean, mobile-first interface focused on ease of use and transparency. Key features include smart search filters, in-app chat, and instant access to job offers — all in one place.",
