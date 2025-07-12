@@ -30,6 +30,24 @@ const processes = [
 const works = [
     {
         id: uuidv4(),
+        title: "Vårdföretagen",
+        description: "Vårdföretaget is a mobile app that connects healthcare consultants with staffing agencies — fast, direct, and without the hassle. Users can create a profile, find assignments, and chat with agencies in real time.",
+        problem: "Healthcare staffing is often slow and unclear, filled with unnecessary phone calls and paperwork. We needed a smooth, digital experience tailored for busy consultants.",
+        solution: "I designed a clean, mobile-first interface focused on ease of use and transparency. Key features include smart search filters, in-app chat, and instant access to job offers — all in one place.",
+        outcome: "The app streamlined the job search process for healthcare consultants, reducing time-to-hire and removing unnecessary friction. Users praised the simple onboarding, fast access to relevant jobs, and how the app gave them more control over their work-life — without the usual agency headaches.",
+        icon: ['vardforetag', 'vardforetag_2', 'vardforetag_3']
+    },
+    {
+        id: uuidv4(),
+        title: "Game Limiter",
+        description: "Game Limiter is a mobile app built to help younger kids develop healthier gaming habits by managing their screen time. It’s designed for parents who want to support their children’s focus and daily routines — especially around school and sleep — without feeling overly controlling.",
+        problem: "Many kids lose track of time while gaming, which affects school, sleep, and social life. The challenge was to create a simple, kid-friendly app that lets parents set time limits in a way that feels encouraging rather than restrictive.",
+        solution: "I designed a clean, colorful mobile interface focused on ease-of-use and positive reinforcement. Parents can schedule gaming hours, track usage, and gently guide their kids toward better balance — all through a fun, intuitive app experience.",
+        outcome: "The app was well received by both parents and kids during testing. Parents reported improved bedtime routines and better focus in school, while kids appreciated the friendly, non-punitive design. The project demonstrated how thoughtful UX can shift behavior — without friction or force.",
+        icon: ['gamelimiter', 'gamelimiter_2', 'gamelimiter_3']
+    },
+    {
+        id: uuidv4(),
         title: "Estate Royal",
         description: "Estate Royale is a high-end real estate platform built to serve the premium property market in the UAE and Qatar. Designed with elegance, exclusivity, and user experience at its core, the platform helps buyers, sellers, and renters seamlessly explore prime listings, connect with top-tier agents, and manage property transactions with total confidence. Our goal was clear: create a luxurious, intuitive, and modern digital experience that mirrors the sophistication of the properties we represent.",
         problem: "Most luxury real estate platforms suffer from outdated interfaces, poor mobile optimization, weak branding, and lack of personalization. Users — especially those seeking multi-million dollar properties — are left frustrated by cluttered UI, slow performance, and generic content that doesn't build trust.",
@@ -46,42 +64,6 @@ const works = [
         outcome: "The final design of PAYSYNC delivers an elegant, easy-to-use, and powerful payment management experience. The project was built with scalability in mind, allowing businesses of all sizes to effortlessly track payments, manage clients, and gain deep financial insights. The UI is sleek, the UX is frictionless, and the overall experience ensures users feel in control of their transactions at all times.",
         icon: ['pay-sync'],
     },
-    {
-        id: uuidv4(),
-        title: "MedConnect Portal",
-        description: "Healthcare patient portal redesign focusing on accessibility and user experience for diverse patient populations.",
-        problem: "Existing portal had poor accessibility compliance, confusing navigation, and high abandonment rates, especially among elderly patients and non-English speakers.",
-        solution: "Conducted extensive user research with diverse patient groups, implemented WCAG 2.1 AA compliance, multi-language support, and simplified appointment booking flows.",
-        outcome: "Increased patient portal adoption by 180%, reduced support tickets by 45%, and achieved 100% WCAG compliance with positive feedback from accessibility audits.",
-        icon: ['work3']
-    },
-    {
-        id: uuidv4(),
-        title: "FinanceFirst Mobile App",
-        description: "Mobile-first financial planning app for millennials and Gen Z users seeking simplified investment management.",
-        problem: "Traditional financial tools were too complex for young investors. Client needed an intuitive app that could simplify portfolio management and investment education.",
-        solution: "Designed a gamified mobile experience with micro-interactions, educational content integration, and AI-powered investment suggestions. Used React Native for cross-platform development.",
-        outcome: "Reached 50,000 active users within 6 months, maintained 4.7 app store rating, and users increased their investment contributions by 60% on average.",
-        icon: ['work4']
-    },
-    {
-        id: uuidv4(),
-        title: "EduTech Learning Hub",
-        description: "Online learning platform for K-12 students with interactive features and progress tracking for parents and teachers.",
-        problem: "Remote learning solutions lacked engagement and provided poor visibility into student progress, leading to decreased learning outcomes during virtual education periods.",
-        solution: "Created an interactive learning environment with real-time collaboration tools, gamified progress tracking, and comprehensive analytics dashboards for educators and parents.",
-        outcome: "Improved student engagement scores by 75%, increased course completion rates to 89%, and received adoption by over 200 schools within the first year.",
-        icon: ['work5']
-    },
-    {
-        id: uuidv4(),
-        title: "RestaurantPro",
-        description: "All-in-one restaurant management system integrating POS, inventory, and customer relationship management.",
-        problem: "Restaurant chains were using multiple disconnected systems for operations, leading to inefficiencies, data silos, and poor customer experience tracking.",
-        solution: "Developed an integrated platform connecting POS systems, inventory management, staff scheduling, and customer analytics with real-time synchronization across all locations.",
-        outcome: "Reduced operational costs by 25%, improved inventory accuracy to 98%, and increased customer retention rates by 40% through better service personalization.",
-        icon: ['work6']
-    }
 ];
 
 const linksList = [
